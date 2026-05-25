@@ -114,7 +114,7 @@ export default function ServicesPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
               <div className="absolute bottom-8 left-8">
                 <span className="text-red-500 font-mono text-xs uppercase tracking-widest underline block mb-2">Case Study</span>
-                <span className="text-2xl font-bold text-white tracking-tight">Enterprise Digital Shield</span>
+                <span className="text-2xl font-bold text-white tracking-tight">Enterprise Scale</span>
               </div>
             </div>
           </div>
