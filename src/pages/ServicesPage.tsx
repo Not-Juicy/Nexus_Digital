@@ -89,7 +89,8 @@ export default function ServicesPage() {
                 WHY CHOOSE <br />NEXUS DIGITAL?
               </h2>
               <p className="text-white/50 text-lg leading-relaxed mb-12 max-w-xl">
-               We combine strategic consulting, precision targeting, creative optimization, data-drive and automation to help ambitious brands scale smarter.
+                We combine strategic consulting, precision targeting, creative optimization, data-drive and automation to help ambitious brands scale smarter.
+              </p>
               <div className="space-y-6">
                 {[
                   'Strategic alignment with business goals',
