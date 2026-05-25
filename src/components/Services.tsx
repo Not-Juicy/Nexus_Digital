@@ -33,9 +33,9 @@ export default function Services() {
               SERVICES BUILT <br />FOR GROWTH.
             </h2>
           </div>
-          <p className="max-w-sm text-white/40 text-sm leading-relaxed uppercase tracking-wide flex-shrink-0">
-            From strategy to execution, we bring the expertise and tools to help your business thrive in the digital landscape.
-          </p>
+<p className="max-w-sm text-white/40 text-sm leading-relaxed uppercase tracking-wide flex-shrink-0">
+  We combine strategic consulting, precision targeting, creative optimization, data-drive and automation to help ambitious brands scale smarter.
+</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
