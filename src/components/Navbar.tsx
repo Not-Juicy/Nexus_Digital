@@ -38,13 +38,13 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
 <Link to="/" className="flex items-center gap-3 transition-transform hover:scale-105">
-  <img 
-    src="/img/1. Image.png" 
-    alt="NEXUS DIGITAL" 
-    className="h-16 w-auto"
-    referrerPolicy="no-referrer"
-  />
-</Link>
+            <img 
+               src="/img/1. Image.png" 
+               alt="NEXUS DIGITAL" 
+               className="h-16 w-auto"
+               referrerPolicy="no-referrer"
+             />
+           </Link>
 
           {/* Main Desktop Links */}
           <div className="hidden lg:flex items-center gap-8">
@@ -132,11 +132,11 @@ export default function Navbar() {
             >
               <div className="flex justify-between items-center mb-12">
 <img 
-  src="/img/1. Image.png" 
-  alt="NEXUS DIGITAL" 
-  className="h-12 w-auto"
-  referrerPolicy="no-referrer"
-/>
+                   src="/img/1. Image.png" 
+                   alt="NEXUS DIGITAL" 
+                   className="h-12 w-auto"
+                   referrerPolicy="no-referrer"
+                 />
                 <button onClick={() => setIsOpen(false)} className="text-white hover:rotate-90 transition-transform">
                   <X size={32} />
                 </button>

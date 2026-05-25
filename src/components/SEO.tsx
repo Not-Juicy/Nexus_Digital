@@ -11,7 +11,7 @@ export default function SEO({ title, description, image, article }: SEOProps) {
   const defaultTitle = 'Nexus Digital | High-Performance Digital Agency';
   const defaultDescription = 'Nexus Digital is a premium digital marketing and SaaS strategy agency based in Cambodia, serving ambitious brands globally.';
   const siteUrl = 'https://nexusdigital.asia'; // Placeholder URL
-  const defaultImage = '/img/Nexus-Digital-1.png';
+  const defaultImage = '/img/1. Image.png';
 
   const seo = {
     title: title ? `${title} | Nexus Digital` : defaultTitle,
