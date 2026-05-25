@@ -107,10 +107,9 @@ export default function ServicesPage() {
             </div>
             <div className="relative aspect-video bg-[#111] overflow-hidden border border-white/10 group">
               <img 
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=1000" 
+                src="/img/why-choose.webp"
                 alt="Digital Strategy" 
                 className="w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-[2s]"
-                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
               <div className="absolute bottom-8 left-8">
