@@ -17,7 +17,7 @@ export default function Navbar() {
 
   const menuItems = {
     services: [
-      { name: 'Digital Marketing', href: '/services' },
+      { name: 'Digital Consulting', href: '/services' },
       { name: 'SaaS Strategy', href: '/services' },
       { name: 'AI & Automation', href: '/services' },
     ],
