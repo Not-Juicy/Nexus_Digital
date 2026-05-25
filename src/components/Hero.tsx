@@ -23,9 +23,9 @@ export default function Hero() {
           <span className="inline-block px-4 py-1.5 border border-red-600/30 rounded-full text-red-500 text-xs font-bold uppercase tracking-[0.2em] mb-8 bg-red-600/5">
             Based in Cambodia • Serving Clients Globally
           </span>
-          <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight leading-[1.1] mb-8 uppercase italic px-4">
+          <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-white tracking-tighter leading-[1.1] mb-8 uppercase px-4">
             SCALE YOUR <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">BUSINESS DIGITALLY.</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">BUSINESS DIGITALLY.</span>
           </h1>
           <p className="max-w-3xl mx-auto text-white/60 text-lg md:text-xl font-medium mb-12 leading-relaxed">
             We partner with ambitious brands to build digital strategies that drive real growth — through performance marketing, SaaS product thinking, and AI-powered automation.
@@ -36,13 +36,13 @@ export default function Hero() {
               href="https://t.me/DanLP18" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="w-full sm:w-auto px-10 py-5 bg-white text-black font-black uppercase tracking-widest hover:bg-red-600 hover:text-white transition-all transform hover:scale-105"
+              className="w-full sm:w-auto px-10 py-5 bg-white text-black font-black uppercase tracking-widest hover:bg-red-600 hover:text-white transition-all transform hover:scale-105 rounded-full"
             >
               CONSULTATION
             </a>
             <Link 
               to="/services" 
-              className="w-full sm:w-auto px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest hover:border-white transition-all transform hover:scale-105 text-center flex items-center justify-center"
+              className="w-full sm:w-auto px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest hover:border-white transition-all transform hover:scale-105 text-center flex items-center justify-center rounded-full"
             >
               See Services
             </Link>

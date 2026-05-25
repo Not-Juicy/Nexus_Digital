@@ -36,7 +36,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-white font-bold text-lg mb-2">Location</h3>
-                    <p className="text-white/40 leading-relaxed">No. 123 Street 456, <br />Phnom Penh, Cambodia</p>
+                    <p className="text-white/40 leading-relaxed">OCIC, <br />Phnom Penh, Cambodia.</p>
                   </div>
                 </div>
 
@@ -46,7 +46,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-white font-bold text-lg mb-2">Phone</h3>
-                    <p className="text-white/40 leading-relaxed">+855 (81) 311 033</p>
+                    <p className="text-white/40 leading-relaxed">+855 (81) 968 581</p>
                   </div>
                 </div>
 

@@ -167,8 +167,8 @@ export default function ServicesPage() {
               <a href="https://t.me/DanLP18" target="_blank" rel="noopener noreferrer" className="flex-1 px-8 py-5 bg-black text-white text-center font-black uppercase tracking-widest hover:bg-red-600 transition-colors flex items-center justify-center gap-3">
                 <Send size={18} /> Telegram
               </a>
-              <a href="tel:+85581311033" className="flex-1 px-8 py-5 border-2 border-black text-black text-center font-black uppercase tracking-widest hover:bg-black hover:text-white transition-colors flex items-center justify-center gap-3">
-                <Phone size={18} /> +855 81 311 033
+              <a href="tel:+85581968581" className="flex-1 px-8 py-5 border-2 border-black text-black text-center font-black uppercase tracking-widest hover:bg-black hover:text-white transition-colors flex items-center justify-center gap-3">
+                <Phone size={18} /> +855 81 968 581
               </a>
             </div>
           </div>

@@ -77,14 +77,14 @@ export default function Footer() {
               <div className="flex items-start gap-4 text-sm font-bold uppercase tracking-widest leading-relaxed text-white/50">
                 <MapPin className="w-5 h-5 text-red-600 shrink-0" />
                 <div>
-                  No. 123 Street 456, <br />
-                  Phnom Penh, Cambodia
+                  OCIC, <br />
+                  Phnom Penh, Cambodia.
                 </div>
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4 text-sm font-bold uppercase tracking-widest text-white/50">
                   <Phone className="w-5 h-5 text-red-600 shrink-0" />
-                  +855 81 311 033
+                  +855 81 968 581
                 </div>
                 <div className="hidden sm:flex flex-col items-end">
                   <span className="text-[8px] font-black text-red-600 uppercase tracking-widest mb-1">LOCAL TIME</span>

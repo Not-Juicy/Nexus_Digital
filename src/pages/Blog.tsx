@@ -117,13 +117,13 @@ export default function Blog() {
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-              <a href="tel:+85581311033" className="flex items-center gap-4 group">
+              <a href="tel:+85581968581" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 bg-black flex items-center justify-center group-hover:bg-red-600 transition-colors">
                   <Phone size={20} className="text-white" />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-[8px] font-black text-black/30 uppercase tracking-widest">Direct Line</span>
-                  <span className="text-sm font-black text-black">+855 81 311 033</span>
+                  <span className="text-sm font-black text-black">+855 81 968 581</span>
                 </div>
               </a>
               <a href="https://t.me/DanLP18" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">

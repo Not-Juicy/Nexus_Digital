@@ -140,8 +140,8 @@ export default function About() {
               <p className="text-white/80 font-bold uppercase tracking-widest text-sm">Direct support at your fingertips.</p>
             </div>
             <div className="flex flex-wrap justify-center gap-8">
-              <a href="tel:+85581311033" className="flex items-center gap-3 text-white font-black hover:scale-110 transition-transform">
-                <Phone size={24} /> <span>+855 81 311 033</span>
+              <a href="tel:+85581968581" className="flex items-center gap-3 text-white font-black hover:scale-110 transition-transform">
+                <Phone size={24} /> <span>+855 81 968 581</span>
               </a>
               <a href="https://t.me/DanLP18" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white font-black hover:scale-110 transition-transform">
                 <Send size={24} /> <span>Telegram</span>

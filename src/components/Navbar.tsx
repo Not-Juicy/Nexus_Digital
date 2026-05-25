@@ -102,7 +102,7 @@ export default function Navbar() {
               href="https://t.me/DanLP18" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="flex items-center gap-4 bg-red-600 py-4 px-6 hover:bg-white hover:text-black group transition-all cursor-pointer"
+              className="flex items-center gap-4 bg-red-600 py-4 px-6 hover:bg-white hover:text-black group transition-all cursor-pointer rounded-full"
             >
               <div className="bg-white/20 p-2 rounded-lg group-hover:bg-black/10">
                 <PhoneCall className="w-5 h-5" />

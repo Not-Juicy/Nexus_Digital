@@ -55,7 +55,7 @@ export default function Home() {
             </div>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-              <a href="tel:+85581311033" className="flex flex-col items-center gap-3 group">
+              <a href="tel:+85581968581" className="flex flex-col items-center gap-3 group">
                 <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center group-hover:bg-red-600 group-hover:border-red-600 transition-all">
                   <Phone className="w-5 h-5 text-white" />
                 </div>
@@ -111,7 +111,7 @@ export default function Home() {
                   href="https://t.me/DanLP18" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="px-12 py-5 bg-red-600 text-white font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all flex items-center justify-center gap-3 group"
+                  className="px-12 py-5 bg-red-600 text-white font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all flex items-center justify-center gap-3 group rounded-full"
                 >
                   Book a Consultation <span className="w-5 h-5 bg-white/20 rounded flex items-center justify-center group-hover:bg-black/10">→</span>
                 </a>
