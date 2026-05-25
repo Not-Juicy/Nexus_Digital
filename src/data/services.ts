@@ -4,9 +4,9 @@ import { Service } from '../types';
 export const services: Service[] = [
   {
     title: 'Digital Consulting',
-    desc: 'Performance-driven campaigns across Google, Meta, and TikTok. We optimize every dollar for maximum return with data-backed strategies.',
+    desc: 'Data-driven ads campaigns that generate qualified leads, increase conversions, app installs across Facebook, Instagram, TikTok, GoogleAds, and LinkedIn.',
     icon: TrendingUp,
-    category: 'Marketing'
+    category: 'Digital'
   },
   {
     title: 'SaaS Strategy',
