@@ -4,7 +4,7 @@ import { ShoppingCart, Layout, Cpu, LineChart, Globe, Zap } from 'lucide-react';
 const services = [
   {
     icon: LineChart,
-    title: 'Digital Marketing',
+    title: 'Digital Consulting',
     desc: 'Performance-driven campaigns across Google, Meta, and TikTok. We optimize every dollar for maximum return with data-backed strategies.',
     color: 'from-orange-500 to-red-500'
   },

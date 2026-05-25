@@ -3,7 +3,7 @@ import { Service } from '../types';
 
 export const services: Service[] = [
   {
-    title: 'Digital Marketing',
+    title: 'Digital Consulting',
     desc: 'Performance-driven campaigns across Google, Meta, and TikTok. We optimize every dollar for maximum return with data-backed strategies.',
     icon: TrendingUp,
     category: 'Marketing'
