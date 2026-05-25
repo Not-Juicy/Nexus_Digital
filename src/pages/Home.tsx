@@ -61,7 +61,7 @@ export default function Home() {
                 </div>
                 <span className="text-[10px] font-bold text-white/40 uppercase tracking-widest group-hover:text-white transition-colors">Call Us</span>
               </a>
-              <a href="mailto:nexuspersonal168@gmail.com" className="flex flex-col items-center gap-3 group">
+              <a href="mailto:info@nexus-digital.asia" className="flex flex-col items-center gap-3 group">
                 <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center group-hover:bg-red-600 group-hover:border-red-600 transition-all">
                   <Mail className="w-5 h-5 text-white" />
                 </div>

@@ -36,8 +36,8 @@ export default function Footer() {
               Based in Cambodia, serving clients globally.
             </p>
             <div className="flex flex-col gap-4">
-              <a href="mailto:nexuspersonal168@gmail.com" className="flex items-center gap-4 text-xl md:text-2xl font-bold hover:text-red-500 transition-colors group">
-                <span className="pb-1 border-b-2 border-red-600/30 group-hover:border-red-500 transition-all">nexuspersonal168@gmail.com</span>
+              <a href="mailto:info@nexus-digital.asia" className="flex items-center gap-4 text-xl md:text-2xl font-bold hover:text-red-500 transition-colors group">
+                <span className="pb-1 border-b-2 border-red-600/30 group-hover:border-red-500 transition-all">info@nexus-digital.asia</span>
                 <ArrowUpRight className="w-8 h-8 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform text-red-500" />
               </a>
             </div>
@@ -65,8 +65,8 @@ export default function Footer() {
           <div className="lg:col-span-2 text-center md:text-left">
             <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-red-600 mb-10">Connect</h4>
             <ul className="flex flex-col gap-5 text-sm font-bold uppercase tracking-widest leading-none">
-              <li><a href="mailto:nexuspersonal168@gmail.com" className="text-white/50 hover:text-white transition-colors">Email Us</a></li>
-              <li><a href="https://www.linkedin.com/company/nexus-digital-ad-solutions/" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition-colors">LinkedIn</a></li>
+              <li><a href="mailto:info@nexus-digital.asia" className="text-white/50 hover:text-white transition-colors">Email Us</a></li>
+              <li><a href="https://www.linkedin.com/company/nexus-digital-ad-solutions/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition-colors">LinkedIn</a></li>
               <li><a href="https://t.me/DanLP18" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition-colors">Telegram</a></li>
             </ul>
           </div>
@@ -97,7 +97,7 @@ export default function Footer() {
                 <div className="flex gap-6">
                   {[
                     { Icon: Facebook, href: "https://www.facebook.com/Nexusdigital.asia" },
-                    { Icon: Linkedin, href: "https://www.linkedin.com/company/nexus-digital-ad-solutions/" },
+                    { Icon: Linkedin, href: "https://www.linkedin.com/company/nexus-digital-ad-solutions/?viewAsMember=true" },
                     { Icon: Send, href: "https://t.me/DanLP18" },
                     { Icon: Instagram, href: "#" }
                   ].map((social, i) => (

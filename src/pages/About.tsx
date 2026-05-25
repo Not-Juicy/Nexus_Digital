@@ -146,7 +146,7 @@ export default function About() {
               <a href="https://t.me/DanLP18" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white font-black hover:scale-110 transition-transform">
                 <Send size={24} /> <span>Telegram</span>
               </a>
-              <a href="mailto:nexuspersonal168@gmail.com" className="flex items-center gap-3 text-white font-black hover:scale-110 transition-transform">
+              <a href="mailto:info@nexus-digital.asia" className="flex items-center gap-3 text-white font-black hover:scale-110 transition-transform">
                 <Mail size={24} /> <span>Email Us</span>
               </a>
             </div>

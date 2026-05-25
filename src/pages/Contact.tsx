@@ -56,7 +56,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-white font-bold text-lg mb-2">Email</h3>
-                    <p className="text-white/40 leading-relaxed">nexuspersonal168@gmail.com</p>
+                    <p className="text-white/40 leading-relaxed">info@nexus-digital.asia</p>
                   </div>
                 </div>
               </div>
@@ -69,7 +69,7 @@ export default function Contact() {
                   <MessageCircle className="w-4 h-4" /> Telegram
                 </a>
                 <a href="https://www.facebook.com/Nexusdigital.asia" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-red-500 transition-colors uppercase text-xs font-bold tracking-widest">Facebook</a>
-                <a href="https://www.linkedin.com/company/nexus-digital-ad-solutions/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-red-500 transition-colors uppercase text-xs font-bold tracking-widest">LinkedIn</a>
+                <a href="https://www.linkedin.com/company/nexus-digital-ad-solutions/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-red-500 transition-colors uppercase text-xs font-bold tracking-widest">LinkedIn</a>
               </div>
             </div>
           </div>

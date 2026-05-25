@@ -167,7 +167,7 @@ export default function Navbar() {
                     <Send className="text-white/50 hover:text-red-500 transition-colors cursor-pointer" />
                     <span className="text-white/30 text-[10px] font-bold uppercase tracking-widest">Telegram</span>
                   </a>
-                  <a href="https://www.linkedin.com/company/nexus-digital-ad-solutions/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
+                  <a href="https://www.linkedin.com/company/nexus-digital-ad-solutions/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
                     <Linkedin className="text-white/50 hover:text-red-500 transition-colors cursor-pointer" />
                     <span className="text-white/30 text-[10px] font-bold uppercase tracking-widest">LinkedIn</span>
                   </a>
