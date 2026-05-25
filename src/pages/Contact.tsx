@@ -75,28 +75,28 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-7 bg-[#080808] p-12 border border-white/5">
+          <div className="lg:col-span-7 bg-[#080808] p-12 border border-white/5 rounded-2xl">
             <h2 className="text-2xl font-bold text-white mb-12 tracking-tight italic">Write us a Message</h2>
             <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-2">
-                  <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">Full Name</label>
-                  <input type="text" className="w-full bg-black border-b border-white/10 p-4 text-white focus:outline-none focus:border-red-600 transition-colors" placeholder="John Doe" />
+                <div className="space-y-3">
+                  <label className="text-[10px] font-bold uppercase tracking-widest text-white/50">Full Name</label>
+                  <input type="text" className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-red-600 focus:bg-[#111] transition-all duration-200" placeholder="John Doe" />
                 </div>
-                <div className="space-y-2">
-                  <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">Email Address</label>
-                  <input type="email" className="w-full bg-black border-b border-white/10 p-4 text-white focus:outline-none focus:border-red-600 transition-colors" placeholder="john@example.com" />
+                <div className="space-y-3">
+                  <label className="text-[10px] font-bold uppercase tracking-widest text-white/50">Email Address</label>
+                  <input type="email" className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-red-600 focus:bg-[#111] transition-all duration-200" placeholder="john@example.com" />
                 </div>
               </div>
-              <div className="space-y-2">
-                <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">Subject</label>
-                <input type="text" className="w-full bg-black border-b border-white/10 p-4 text-white focus:outline-none focus:border-red-600 transition-colors" placeholder="I'm interested in..." />
+              <div className="space-y-3">
+                <label className="text-[10px] font-bold uppercase tracking-widest text-white/50">Subject</label>
+                <input type="text" className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-red-600 focus:bg-[#111] transition-all duration-200" placeholder="I'm interested in..." />
               </div>
-              <div className="space-y-2">
-                <label className="text-[10px] font-bold uppercase tracking-widest text-white/40">Message</label>
-                <textarea rows={5} className="w-full bg-black border-b border-white/10 p-4 text-white focus:outline-none focus:border-red-600 transition-colors resize-none" placeholder="How can we help?"></textarea>
+              <div className="space-y-3">
+                <label className="text-[10px] font-bold uppercase tracking-widest text-white/50">Message</label>
+                <textarea rows={5} className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-red-600 focus:bg-[#111] transition-all duration-200 resize-none" placeholder="How can we help?"></textarea>
               </div>
-              <button className="w-full py-6 bg-red-600 text-white font-black uppercase tracking-[0.3em] hover:bg-white hover:text-black transition-all flex items-center justify-center gap-3">
+              <button className="w-full py-6 bg-red-600 text-white font-black uppercase tracking-[0.3em] hover:bg-white hover:text-black transition-all flex items-center justify-center gap-3 rounded-lg">
                 Send Message <Send className="w-4 h-4" />
               </button>
             </form>
