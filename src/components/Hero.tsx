@@ -23,10 +23,9 @@ export default function Hero() {
           <span className="inline-block px-4 py-1.5 border border-red-600/30 rounded-full text-red-500 text-xs font-bold uppercase tracking-[0.2em] mb-8 bg-red-600/5">
             Based in Cambodia • Serving Clients Globally
           </span>
-          <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-white tracking-tighter leading-[1.1] mb-8 uppercase px-4">
-            DIGITAL STRATEGY. <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">AI AUTOMATION. <br />
-            REAL GROWTH.</span>
+          {/* Updated heading */}
+          <h1 className="text-4xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter leading-[1.05] mb-8 uppercase px-4">
+            WE HELP BUSINESSES SCALE WITH DIGITAL & AI.
           </h1>
           <p className="max-w-3xl mx-auto text-white/60 text-lg md:text-xl font-medium mb-12 leading-relaxed">
             We partner with ambitious brands to build digital strategies that drive real growth — through performance marketing, SaaS product thinking, and AI-powered automation.
