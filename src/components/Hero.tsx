@@ -52,7 +52,8 @@ export default function Hero() {
             Based in Cambodia • Serving Clients Globally
           </span>
           <h1 className="text-4xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter leading-[1.05] mb-8 uppercase px-4">
-            WE HELP BUSINESSES SCALE <br />
+            WE HELP <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-red-800 italic pr-2 drop-shadow-[0_0_35px_rgba(239,68,68,0.15)]">BUSINESSES SCALE</span><br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-red-800 italic pr-2 drop-shadow-[0_0_35px_rgba(239,68,68,0.15)]">WITH DIGITAL &amp; AI.</span>
           </h1>
           <p className="max-w-3xl mx-auto text-white/60 text-lg md:text-xl font-medium mb-12 leading-relaxed">
