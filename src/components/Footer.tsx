@@ -21,12 +21,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-32">
           <div className="lg:col-span-6">
-            <img 
-              src="/img/Nexus-Digital-1.png" 
-              alt="NEXUS DIGITAL" 
-              className="h-16 w-auto mb-12 grayscale hover:grayscale-0 transition-all cursor-pointer"
-              referrerPolicy="no-referrer"
-            />
+<img 
+  src="/img/Nexus-Digital-1.png" 
+  alt="NEXUS DIGITAL" 
+  className="h-16 w-auto mb-12"
+  referrerPolicy="no-referrer"
+/>
             <h3 className="text-4xl md:text-7xl font-black tracking-tighter mb-8 leading-[0.9] uppercase italic">
               LET'S ARCHITECT <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-900 leading-none">THE FUTURE.</span>
