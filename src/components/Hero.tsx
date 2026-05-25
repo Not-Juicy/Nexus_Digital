@@ -52,14 +52,12 @@ export default function Hero() {
             Based in Cambodia • Serving Clients Globally
           </span>
           <h1 className="text-4xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter leading-[1.05] mb-8 uppercase px-4">
-            WE HELP BUSINESSES SCALE<br />
+            WE HELP BUSINESSES SCALE <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-red-800 italic pr-2 drop-shadow-[0_0_35px_rgba(239,68,68,0.15)]">WITH DIGITAL &amp; AI.</span>
           </h1>
-          <div className="max-w-3xl mx-auto mb-12 flex flex-col items-center gap-1">
-            <p className="text-2xl md:text-4xl font-black text-white uppercase tracking-tight leading-tight">DIGITAL STRATEGY.</p>
-            <p className="text-2xl md:text-4xl font-black text-red-500 uppercase tracking-tight leading-tight italic">AI AUTOMATION.</p>
-            <p className="text-2xl md:text-4xl font-black text-red-500 uppercase tracking-tight leading-tight italic">REAL GROWTH.</p>
-          </div>
+          <p className="max-w-3xl mx-auto text-white/60 text-lg md:text-xl font-medium mb-12 leading-relaxed">
+            We help ambitious businesses scale through digital strategy, AI automation, performance marketing, and system integration.
+          </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-16">
             <a 
