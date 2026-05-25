@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-32">
           <div className="lg:col-span-6">
 <img 
-  src="/img/Nexus-Digital-1.png" 
+  src="/img/1. Image.png" 
   alt="NEXUS DIGITAL" 
   className="h-16 w-auto mb-12"
   referrerPolicy="no-referrer"

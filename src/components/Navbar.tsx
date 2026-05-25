@@ -37,14 +37,14 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <Link to="/" className="flex items-center gap-3 transition-transform hover:scale-105">
-            <img 
-              src="/img/Nexus-Digital-1.png" 
-              alt="NEXUS DIGITAL" 
-              className="h-16 w-auto"
-              referrerPolicy="no-referrer"
-            />
-          </Link>
+<Link to="/" className="flex items-center gap-3 transition-transform hover:scale-105">
+  <img 
+    src="/img/1. Image.png" 
+    alt="NEXUS DIGITAL" 
+    className="h-16 w-auto"
+    referrerPolicy="no-referrer"
+  />
+</Link>
 
           {/* Main Desktop Links */}
           <div className="hidden lg:flex items-center gap-8">
@@ -131,12 +131,12 @@ export default function Navbar() {
               className="fixed top-0 right-0 w-full max-w-sm h-screen bg-[#0a0a0a] z-[100] p-12 overflow-y-auto"
             >
               <div className="flex justify-between items-center mb-12">
-                <img 
-                  src="/img/Nexus-Digital-1.png" 
-                  alt="NEXUS DIGITAL" 
-                  className="h-12 w-auto"
-                  referrerPolicy="no-referrer"
-                />
+<img 
+  src="/img/1. Image.png" 
+  alt="NEXUS DIGITAL" 
+  className="h-12 w-auto"
+  referrerPolicy="no-referrer"
+/>
                 <button onClick={() => setIsOpen(false)} className="text-white hover:rotate-90 transition-transform">
                   <X size={32} />
                 </button>
