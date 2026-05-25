@@ -23,7 +23,7 @@ export default function Hero() {
           <span className="inline-block px-4 py-1.5 border border-red-600/30 rounded-full text-red-500 text-xs font-bold uppercase tracking-[0.2em] mb-8 bg-red-600/5">
             Based in Cambodia • Serving Clients Globally
           </span>
-          <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-white tracking-tighter leading-[1.2] mb-8 uppercase px-4">
+          <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-white tracking-tighter leading-[1.1] mb-8 uppercase px-4">
             DIGITAL STRATEGY. <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">AI AUTOMATION.</span> <br />
             REAL GROWTH.
