@@ -5,7 +5,7 @@ const services = [
   {
     icon: LineChart,
     title: 'Digital Consulting',
-    desc: 'Performance-driven campaigns across Google, Meta, and TikTok. We optimize every dollar for maximum return with data-backed strategies.',
+    desc: 'Data-driven ads campaigns that generate qualified leads, increase conversions, app installs across Facebook, Instagram, TikTok, GoogleAds, and LinkedIn.',
     color: 'from-orange-500 to-red-500'
   },
   {
