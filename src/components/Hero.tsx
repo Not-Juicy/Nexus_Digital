@@ -25,8 +25,8 @@ export default function Hero() {
           </span>
           <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-white tracking-tighter leading-[1.1] mb-8 uppercase px-4">
             DIGITAL STRATEGY. <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">AI AUTOMATION.</span> <br />
-            REAL GROWTH.
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">AI AUTOMATION. <br />
+            REAL GROWTH.</span>
           </h1>
           <p className="max-w-3xl mx-auto text-white/60 text-lg md:text-xl font-medium mb-12 leading-relaxed">
             We partner with ambitious brands to build digital strategies that drive real growth — through performance marketing, SaaS product thinking, and AI-powered automation.
