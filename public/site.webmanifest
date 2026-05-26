@@ -7,9 +7,9 @@
   "theme_color": "#050505",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/img/nexus%20digital%20icon.png",
       "sizes": "any",
-      "type": "image/svg+xml"
+      "type": "image/png"
     }
   ]
 }
