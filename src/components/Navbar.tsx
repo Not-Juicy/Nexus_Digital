@@ -76,7 +76,7 @@ export default function Navbar() {
 
             <div className="relative group" onMouseEnter={() => setActiveDropdown('company')} onMouseLeave={() => setActiveDropdown(null)}>
               <button className="flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-white hover:text-red-500 transition-colors">
-                Company <ChevronDown className="w-3" />
+                About <ChevronDown className="w-3" />
               </button>
               <AnimatePresence>
                 {activeDropdown === 'company' && (
