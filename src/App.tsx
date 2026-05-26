@@ -4,6 +4,7 @@ import RootLayout from './layouts/RootLayout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Blog from './pages/Blog';
+import BlogPostPage from './pages/BlogPost';
 import ServicesPage from './pages/ServicesPage';
 import Contact from './pages/Contact';
 import Ecommerce from './pages/Ecommerce';
@@ -20,6 +21,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="blog/:slug" element={<BlogPostPage />} />
           <Route path="services" element={<ServicesPage />} />
           <Route path="ecommerce" element={<Ecommerce />} />
           <Route path="contact" element={<Contact />} />
@@ -29,4 +31,3 @@ export default function App() {
     </AnimatePresence>
   );
 }
-

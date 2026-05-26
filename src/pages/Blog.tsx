@@ -1,44 +1,8 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Calendar, User, Clock, Phone, Send, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-const blogPosts = [
-  {
-    title: 'Hello world!',
-    excerpt: 'Welcome to NEXUS Digital. This is our first post. Stay tuned for more insights into the digital SEA market...',
-    date: 'May 16, 2025',
-    author: 'Admin',
-    readTime: '2 min read',
-    category: 'Company News',
-    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=1000'
-  },
-  {
-    title: 'Get few solutions to make a best website',
-    excerpt: 'Optimizing speed, performance and user experience in the Cambodian digital landscape. Learn how we build for scale...',
-    date: 'July 21, 2023',
-    author: 'Nexus Team',
-    readTime: '5 min read',
-    category: 'Development',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1000'
-  },
-  {
-    title: 'Get the Most out of the Creativity',
-    excerpt: 'Bridging the gap between raw data and creative execution. Strategy is the heart of every digital campaign...',
-    date: 'July 21, 2023',
-    author: 'Nexus Team',
-    readTime: '4 min read',
-    category: 'Design',
-    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=1000'
-  },
-  {
-    title: 'How Much a Website Cost to develop?',
-    excerpt: 'Breaking down the costs of digital transformation. From basic landing pages to enterprise automation...',
-    date: 'July 21, 2023',
-    author: 'Admin',
-    readTime: '7 min read',
-    category: 'Consulting',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000'
-  }
-];
+import { blogPosts } from '../data/blogPosts';
 
 export default function Blog() {
   return (
@@ -64,44 +28,45 @@ export default function Blog() {
       <section className="py-32 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {blogPosts.map((post, i) => (
-            <motion.article
-              key={post.title}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="group cursor-pointer"
-            >
-              <div className="aspect-[16/9] overflow-hidden bg-[#111] border border-white/5 relative mb-8">
-                <img 
-                  src={post.image} 
-                  alt={post.title} 
-                  className="w-full h-full object-cover opacity-50 group-hover:scale-110 group-hover:opacity-70 transition-all duration-700"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute top-6 left-6 px-4 py-2 bg-red-600 text-white text-[10px] font-black uppercase tracking-widest">
-                  {post.category}
+            <Link key={post.slug} to={`/blog/${post.slug}`} className="group block">
+              <motion.article
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="cursor-pointer"
+              >
+                <div className="aspect-[16/9] overflow-hidden bg-[#111] border border-white/5 relative mb-8">
+                  <img 
+                    src={post.image} 
+                    alt={post.title} 
+                    className="w-full h-full object-cover opacity-50 group-hover:scale-110 group-hover:opacity-70 transition-all duration-700"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute top-6 left-6 px-4 py-2 bg-red-600 text-white text-[10px] font-black uppercase tracking-widest">
+                    {post.category}
+                  </div>
                 </div>
-              </div>
 
-              <div className="flex gap-6 mb-4 text-white/30 text-[10px] font-bold uppercase tracking-widest">
-                <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> {post.date}</span>
-                <span className="flex items-center gap-1"><User className="w-3 h-3" /> {post.author}</span>
-                <span className="flex items-center gap-1"><Clock className="w-3 h-3" /> {post.readTime}</span>
-              </div>
+                <div className="flex gap-6 mb-4 text-white/30 text-[10px] font-bold uppercase tracking-widest">
+                  <span className="flex items-center gap-1"><Calendar className="w-3 h-3" /> {post.date}</span>
+                  <span className="flex items-center gap-1"><User className="w-3 h-3" /> {post.author}</span>
+                  <span className="flex items-center gap-1"><Clock className="w-3 h-3" /> {post.readTime}</span>
+                </div>
 
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-red-500 transition-colors leading-tight italic tracking-tight">
-                {post.title}
-              </h3>
-              
-              <p className="text-white/40 text-sm leading-relaxed mb-8 max-w-lg">
-                {post.excerpt}
-              </p>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-red-500 transition-colors leading-tight italic tracking-tight">
+                  {post.title}
+                </h3>
+                
+                <p className="text-white/40 text-sm leading-relaxed mb-8 max-w-lg">
+                  {post.excerpt}
+                </p>
 
-              <div className="inline-flex items-center gap-2 text-white font-bold text-xs uppercase tracking-widest group-hover:gap-4 transition-all border-b border-white/20 pb-2">
-                Read Article <ArrowRight className="w-4 h-4 text-red-500" />
-              </div>
-            </motion.article>
+                <div className="inline-flex items-center gap-2 text-white font-bold text-xs uppercase tracking-widest group-hover:gap-4 transition-all border-b border-white/20 pb-2">
+                  Read Article <ArrowRight className="w-4 h-4 text-red-500" />
+                </div>
+              </motion.article>
+            </Link>
           ))}
         </div>
       </section>
