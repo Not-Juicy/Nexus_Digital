@@ -125,7 +125,7 @@ export default function Home() {
                 <span className="text-[8px] font-bold text-white/30 uppercase tracking-widest">Retention Rate</span>
               </div>
               <div className="p-8 bg-[#0a0a0a] border border-white/5 hover:border-red-600/30 transition-all group">
-                <span className="block text-3xl font-black text-red-600 mb-1">10X</span>
+                <span className="block text-3xl font-black text-red-600 mb-1">7X</span>
                 <span className="text-[8px] font-bold text-white/30 uppercase tracking-widest">Average ROI</span>
               </div>
               <div className="p-8 bg-[#0a0a0a] border border-white/5 hover:border-red-600/30 transition-all group">
@@ -133,7 +133,7 @@ export default function Home() {
                 <span className="text-[8px] font-bold text-white/30 uppercase tracking-widest">Technical Support</span>
               </div>
               <div className="p-8 bg-[#0a0a0a] border border-white/5 hover:border-red-600/30 transition-all group">
-                <span className="block text-3xl font-black text-red-600 mb-1">5K+</span>
+                <span className="block text-3xl font-black text-red-600 mb-1">50K+</span>
                 <span className="text-[8px] font-bold text-white/30 uppercase tracking-widest">Campaigns Run</span>
               </div>
             </div>
