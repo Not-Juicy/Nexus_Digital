@@ -5,7 +5,7 @@ const services = [
   {
     icon: LineChart,
     title: 'Digital Consulting',
-    desc: 'Data-driven ads campaigns that generate qualified leads, increase conversions, app installs across Facebook, Instagram, TikTok, GoogleAds, and LinkedIn.',
+    desc: 'Scaling businesses through strategic, data-driven advertising campaigns that generate qualified leads, increase conversions, and maximize ROI across Facebook, Instagram, TikTok, LinkedIn, and beyond.',
     color: 'from-orange-500 to-red-500'
   },
   {
