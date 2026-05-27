@@ -1,11 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { caseStudies } from '../data/caseStudies';
 
 export default function DragRevealStack() {
   const [index, setIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const intervalRef = useRef<ReturnType<typeof setInterval>>();
   const total = caseStudies.length;
+
+  useEffect(() => {
+    if (paused) return;
+    intervalRef.current = setInterval(() => {
+      setIndex((i) => (i + 1) % total);
+    }, 4000);
+    return () => clearInterval(intervalRef.current);
+  }, [total, paused]);
 
   if (total === 0) {
     return (
@@ -21,7 +31,12 @@ export default function DragRevealStack() {
   const cs = caseStudies[index];
 
   return (
-    <div className="relative w-full" style={{ aspectRatio: '4/5', maxHeight: 520, minHeight: 400 }}>
+    <div
+      className="relative w-full group"
+      style={{ aspectRatio: '4/5', maxHeight: 520, minHeight: 400 }}
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
       <AnimatePresence mode="wait">
         <motion.div
           key={index}
