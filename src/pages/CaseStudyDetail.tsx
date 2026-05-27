@@ -19,9 +19,9 @@ export default function CaseStudyDetail() {
   }
 
   return (
-    <div className="pt-32 bg-black min-h-screen">
-      <section className="py-24 px-6 max-w-4xl mx-auto">
-        <Link to="/" className="inline-flex items-center gap-2 text-white/40 hover:text-red-500 transition-colors text-xs font-bold uppercase tracking-widest mb-12">
+    <div className="pt-24 md:pt-32 bg-black min-h-screen">
+      <section className="pt-8 md:pt-16 pb-24 px-6 max-w-4xl mx-auto">
+        <Link to="/" className="inline-flex items-center gap-2 text-white/40 hover:text-red-500 transition-colors text-xs font-bold uppercase tracking-widest mb-8">
           <ArrowLeft className="w-4 h-4" /> Back to Home
         </Link>
 
