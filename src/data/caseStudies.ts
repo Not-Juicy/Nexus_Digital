@@ -11,7 +11,7 @@ export const caseStudies: CaseStudy[] = [
     slug: 'digital-consulting-lead-gen',
     title: 'Digital Consulting — Lead Generation',
     category: 'Digital Consulting',
-    image: 'https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=1000',
+    image: '/img/imagee (1).png',
     desc: 'Scaling businesses through strategic, data-driven advertising campaigns that generate qualified leads, increase conversions, and maximize ROI across Facebook, Instagram, TikTok, LinkedIn, and beyond.',
     results: '5X lead volume at 40% lower CPA'
   },
@@ -19,7 +19,7 @@ export const caseStudies: CaseStudy[] = [
     slug: 'saas-launch-sea',
     title: 'SaaS Product Launch — SEA',
     category: 'SaaS Strategy',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000',
+    image: '/img/imagee (2).png',
     desc: 'Product strategy, roadmap planning, and go-to-market execution for SaaS businesses. From PRDs to launch and beyond.',
     results: '5,000+ signups in first quarter'
   },
@@ -27,7 +27,7 @@ export const caseStudies: CaseStudy[] = [
     slug: 'ai-automation-enterprise',
     title: 'AI Automation — Enterprise',
     category: 'AI & Automation',
-    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1000',
+    image: '/img/imagee (3).png',
     desc: 'Integrate AI tools and workflows into your business operations. Automate repetitive tasks and unlock new capabilities with intelligent systems.',
     results: '70% operational cost reduction'
   },
