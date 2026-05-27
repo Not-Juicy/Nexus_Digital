@@ -56,7 +56,7 @@ export default function About() {
           >
             <span className="text-[10px] font-black text-red-500 uppercase tracking-[0.4em] mb-5 block">Our Foundation</span>
             <h2 className="text-4xl md:text-5xl font-black text-white mb-8 tracking-tight leading-[1.1]">
-              The <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700 italic pr-1">NEXUS</span> Vision
+              The <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700 italic pr-2">NEXUS</span> Vision
             </h2>
             <div className="border-l-2 border-red-600/30 pl-6 space-y-5 text-white/50 text-lg leading-relaxed">
               <p className="text-white/60">
