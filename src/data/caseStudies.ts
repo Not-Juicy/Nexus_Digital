@@ -11,7 +11,7 @@ export const caseStudies: CaseStudy[] = [
     slug: 'digital-consulting-lead-gen',
     title: 'Digital Consulting — Lead Generation',
     category: 'Digital Consulting',
-    image: 'https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=1000',
+    image: '/img/why-choose.webp',
     desc: 'Scaling businesses through strategic, data-driven advertising campaigns that generate qualified leads, increase conversions, and maximize ROI across Facebook, Instagram, TikTok, LinkedIn, and beyond.',
     results: '5X lead volume at 40% lower CPA'
   },
