@@ -46,6 +46,7 @@ export default function About() {
 
       {/* Vision + Values */}
       <section className="py-32 px-6 max-w-7xl mx-auto relative overflow-hidden">
+        <div className="absolute top-[-10%] left-[20%] w-[40%] h-[60%] bg-[radial-gradient(circle_at_50%_50%,rgba(220,38,38,0.04)_0%,transparent_70%)]" />
         <div className="absolute bottom-0 right-0 text-[25vw] font-black text-white/[0.015] select-none pointer-events-none tracking-tighter italic leading-none">NEXUS</div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start relative z-10">
           <motion.div
@@ -53,19 +54,25 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold text-white mb-8 tracking-tight italic">The NEXUS Vision</h2>
-            <div className="space-y-6 text-white/50 text-lg leading-relaxed">
-              <p>
-                In today&apos;s digital-first world, visibility, automation, and strategy are no longer optional—they&apos;re essential. We bridge the gap between traditional business models and the future of digital commerce.
+            <span className="text-[10px] font-black text-red-500 uppercase tracking-[0.4em] mb-5 block">Our Foundation</span>
+            <h2 className="text-4xl md:text-5xl font-black text-white mb-8 tracking-tight leading-[1.1]">
+              The <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700 italic">NEXUS</span> Vision
+            </h2>
+            <div className="border-l-2 border-red-600/30 pl-6 space-y-5 text-white/50 text-lg leading-relaxed">
+              <p className="text-white/60">
+                In today&apos;s digital-first world, visibility, automation, and strategy are no longer optional — <span className="text-white/80 font-medium">they&apos;re essential.</span>
               </p>
-              <p>
+              <p className="text-white/50">
+                We bridge the gap between traditional business models and the future of digital commerce.
+              </p>
+              <p className="text-white/50">
                 Based in Cambodia, we bring a global perspective to the Southeast Asian market, helping enterprises navigate the complexities of digital transformation with light-speed execution.
               </p>
             </div>
           </motion.div>
 
           {/* Values Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {values.map((v, i) => (
               <motion.div
                 key={v.title}
@@ -73,12 +80,12 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="p-8 bg-[#111] border border-white/5 hover:border-red-500/30 transition-all duration-500 group hover:-translate-y-1 hover:shadow-[0_8px_30px_-4px_rgba(220,38,38,0.1)]"
+                className="p-7 bg-[#111] border border-white/5 hover:border-red-500/30 transition-all duration-500 group hover:-translate-y-1 hover:shadow-[0_8px_30px_-4px_rgba(220,38,38,0.1)]"
               >
-                <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors duration-500">
-                  <v.icon className="w-6 h-6 text-white" />
+                <div className="w-11 h-11 bg-white/5 rounded-xl flex items-center justify-center mb-5 group-hover:bg-red-600 transition-colors duration-500">
+                  <v.icon className="w-5 h-5 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 tracking-tight">{v.title}</h3>
+                <h3 className="text-lg font-bold text-white mb-2 tracking-tight">{v.title}</h3>
                 <p className="text-white/40 text-sm leading-relaxed">{v.text}</p>
               </motion.div>
             ))}
