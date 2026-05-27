@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ShieldCheck, Zap, ArrowRight, Lightbulb, TrendingUp, Phone, Mail, Send } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 import { services } from '../data/services';
 import SEO from '../components/SEO';
@@ -105,7 +106,7 @@ export default function ServicesPage() {
                 ))}
               </div>
             </div>
-            <div className="relative aspect-video bg-[#111] overflow-hidden border border-white/10 group">
+            <Link to="/about#case-studies" className="relative aspect-video bg-[#111] overflow-hidden border border-white/10 group block">
               <img 
                 src="/img/why-choose.webp"
                 alt="Digital Strategy" 
@@ -116,7 +117,7 @@ export default function ServicesPage() {
                 <span className="text-red-500 font-mono text-xs uppercase tracking-widest underline block mb-2">Case Study</span>
                 <span className="text-2xl font-bold text-white tracking-tight">Enterprise Scale</span>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
