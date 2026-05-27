@@ -1,12 +1,13 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, Mail, Send, Facebook, Instagram, Linkedin, PhoneCall, ChevronDown } from 'lucide-react';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const companyRef = useRef<HTMLDivElement>(null);
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -16,9 +17,13 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    const handleClickOutside = () => setActiveDropdown(null);
-    document.addEventListener('click', handleClickOutside);
-    return () => document.removeEventListener('click', handleClickOutside);
+    const handleClickOutside = (e: MouseEvent) => {
+      if (companyRef.current && !companyRef.current.contains(e.target as Node)) {
+        setActiveDropdown(null);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
   const menuItems = {
@@ -80,8 +85,8 @@ export default function Navbar() {
               </AnimatePresence>
             </div>
 
-            <div className="relative">
-              <button onClick={(e) => { e.stopPropagation(); setActiveDropdown(activeDropdown === 'company' ? null : 'company'); }} className="flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-white hover:text-red-500 transition-colors">
+            <div ref={companyRef} className="relative">
+              <button onClick={() => setActiveDropdown(activeDropdown === 'company' ? null : 'company')} className="flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-white hover:text-red-500 transition-colors">
                 About <ChevronDown className="w-3" />
               </button>
               <AnimatePresence>
