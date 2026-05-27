@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { caseStudies } from '../data/caseStudies';
 
 export default function CaseStudyDetail() {
@@ -12,7 +12,7 @@ export default function CaseStudyDetail() {
       <div className="pt-32 bg-black min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-black text-white mb-4">Case study not found</h1>
-          <Link to="/about#case-studies" className="text-red-500 hover:underline">Back to case studies</Link>
+          <Link to="/" className="text-red-500 hover:underline">Back to home</Link>
         </div>
       </div>
     );
@@ -21,8 +21,8 @@ export default function CaseStudyDetail() {
   return (
     <div className="pt-32 bg-black min-h-screen">
       <section className="py-24 px-6 max-w-4xl mx-auto">
-        <Link to="/about#case-studies" className="inline-flex items-center gap-2 text-white/40 hover:text-red-500 transition-colors text-xs font-bold uppercase tracking-widest mb-12">
-          <ArrowLeft className="w-4 h-4" /> Back to Case Studies
+        <Link to="/" className="inline-flex items-center gap-2 text-white/40 hover:text-red-500 transition-colors text-xs font-bold uppercase tracking-widest mb-12">
+          <ArrowLeft className="w-4 h-4" /> Back to Home
         </Link>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
