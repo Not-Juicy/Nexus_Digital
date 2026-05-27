@@ -15,8 +15,8 @@ export default function Blog() {
         >
           <span className="text-red-500 font-mono text-sm tracking-widest uppercase mb-4 block underline">Insights</span>
           <h1 className="text-5xl md:text-8xl font-bold text-white tracking-tighter mb-8 leading-none">
-            THE DIGITAL <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">REPOSITORY.</span>
+            THE <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">DIGITAL BRIEF.</span>
           </h1>
           <p className="max-w-2xl text-white/50 text-xl font-light">
             Stay updated with the latest trends in e-commerce, enterprise automation, and digital strategy in Asia.
