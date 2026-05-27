@@ -20,7 +20,7 @@ export const caseStudies: CaseStudy[] = [
     title: 'SaaS Product Launch — SEA',
     category: 'SaaS Strategy',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000',
-    desc: 'End-to-end go-to-market strategy for a B2B SaaS platform targeting SMEs across Southeast Asia.',
+    desc: 'Product strategy, roadmap planning, and go-to-market execution for SaaS businesses. From PRDs to launch and beyond.',
     results: '5,000+ signups in first quarter'
   },
   {
