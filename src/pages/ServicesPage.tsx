@@ -75,9 +75,9 @@ export default function ServicesPage() {
               <p className="text-white/60 text-sm leading-relaxed mb-12">
                 {service.desc}
               </p>
-              <div className="inline-flex items-center gap-2 text-white/60 text-xs font-bold uppercase tracking-widest group-hover:text-white transition-colors cursor-pointer border-b border-white/10 pb-2">
+              <Link to="/contact" className="inline-flex items-center gap-2 text-white/60 text-xs font-bold uppercase tracking-widest hover:text-white transition-colors border-b border-white/10 pb-2">
                 Learn More <ArrowRight className="w-4 h-4 text-red-500" />
-              </div>
+              </Link>
             </motion.div>
           ))}
         </div>
