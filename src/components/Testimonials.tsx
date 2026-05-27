@@ -24,7 +24,7 @@ export default function Testimonials() {
         <div className="max-w-2xl">
           <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.6em] mb-4 block">Global Feedback</span>
           <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter uppercase italic leading-none">
-            CLIENT <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/20">VERDICTS.</span>
+            CLIENT <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/20">VIEWS.</span>
           </h2>
         </div>
         <p className="text-white/30 font-bold uppercase tracking-[0.3em] text-[9px] max-w-[250px] leading-relaxed border-l border-red-600/30 pl-4">

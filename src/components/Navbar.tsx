@@ -1,13 +1,11 @@
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Mail, Send, Facebook, Instagram, Linkedin, PhoneCall, ChevronDown } from 'lucide-react';
-import React, { useState, useEffect, useRef } from 'react';
+import { Menu, X, Mail, Send, Facebook, Instagram, Linkedin, PhoneCall } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const companyRef = useRef<HTMLDivElement>(null);
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -16,29 +14,13 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (companyRef.current && !companyRef.current.contains(e.target as Node)) {
-        setActiveDropdown(null);
-      }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
-
-  const menuItems = {
-    services: [
-      { name: 'Digital Consulting', href: '/services' },
-      { name: 'SaaS Strategy', href: '/services' },
-      { name: 'AI & Automation', href: '/services' },
-      { name: 'Ecommerce Solutions', href: '/ecommerce' },
-    ],
-    company: [
-      { name: 'About Us', href: '/about' },
-      { name: 'Clients', href: '/#testimonials' },
-      { name: 'Blog', href: '/blog' },
-    ]
-  };
+  const links = [
+    { name: 'Home', href: '/' },
+    { name: 'Services', href: '/services' },
+    { name: 'About', href: '/about' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Contact', href: '/contact' },
+  ];
 
   return (
     <>
@@ -57,61 +39,20 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* Main Desktop Links */}
+          {/* Desktop Links */}
           <div className="hidden lg:flex items-center gap-8">
-            <Link to="/" className={`text-xs font-bold uppercase tracking-widest transition-colors ${pathname === '/' ? 'text-red-500' : 'text-white hover:text-red-500'}`}>Home</Link>
-            
-            <div className="relative group" onMouseEnter={() => setActiveDropdown('services')} onMouseLeave={() => setActiveDropdown(null)}>
-              <Link to="/services" className="flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-white hover:text-red-500 transition-colors">
-                Services <ChevronDown className="w-3" />
+            {links.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                className={`text-xs font-bold uppercase tracking-widest transition-colors ${
+                  pathname === link.href ? 'text-red-500' : 'text-white hover:text-red-500'
+                }`}
+              >
+                {link.name}
               </Link>
-              <AnimatePresence>
-                {activeDropdown === 'services' && (
-                  <motion.div 
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    className="absolute top-full left-0 mt-4 w-56 bg-[#111] border border-white/10 p-4 shadow-2xl"
-                  >
-                    <div className="flex flex-col gap-3">
-                      {menuItems.services.map(item => (
-                        <Link key={item.name} to={item.href} className="text-[10px] font-bold uppercase tracking-widest text-white/60 hover:text-red-500 transition-colors">
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
+            ))}
 
-            <div ref={companyRef} className="relative flex items-center gap-1">
-              <Link to="/about" className="text-xs font-bold uppercase tracking-widest text-white hover:text-red-500 transition-colors">
-                About
-              </Link>
-              <button onClick={() => setActiveDropdown(activeDropdown === 'company' ? null : 'company')} className="text-white hover:text-red-500 transition-colors">
-                <ChevronDown className="w-3" />
-              </button>
-              <AnimatePresence>
-                {activeDropdown === 'company' && (
-                  <motion.div 
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    className="absolute top-full left-0 mt-4 w-56 bg-[#111] border border-white/10 p-4 shadow-2xl"
-                  >
-                    <div className="flex flex-col gap-3">
-                      {menuItems.company.map(item => (
-                        <Link key={item.name} to={item.href} className="text-[10px] font-bold uppercase tracking-widest text-white/60 hover:text-red-500 transition-colors">
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-            
             <a 
               href="https://t.me/DanLP18" 
               target="_blank" 
@@ -157,17 +98,16 @@ export default function Navbar() {
               </div>
 
               <div className="flex flex-col gap-8">
-                <Link to="/" onClick={() => setIsOpen(false)} className="text-3xl font-black text-white hover:text-red-600 transition-colors uppercase tracking-tighter">Home</Link>
-                <div className="space-y-4">
-                  <Link to="/services" onClick={() => setIsOpen(false)} className="text-[10px] font-black text-white/30 uppercase tracking-[0.3em] hover:text-white transition-colors">Services</Link>
-                  {menuItems.services.map(item => (
-                    <Link key={item.name} to={item.href} onClick={() => setIsOpen(false)} className="block text-xl font-bold text-white/70 hover:text-white uppercase tracking-tight ml-4 underline underline-offset-4 decoration-red-600/30">
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-                <Link to="/about" onClick={() => setIsOpen(false)} className="text-3xl font-black text-white hover:text-red-600 transition-colors uppercase tracking-tighter">About Us</Link>
-                <Link to="/contact" onClick={() => setIsOpen(false)} className="text-3xl font-black text-white hover:text-red-600 transition-colors uppercase tracking-tighter">Contact</Link>
+                {links.map((link) => (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    onClick={() => setIsOpen(false)}
+                    className="text-3xl font-black text-white hover:text-red-600 transition-colors uppercase tracking-tighter"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
               </div>
 
               <div className="mt-20 pt-8 border-t border-white/5">
