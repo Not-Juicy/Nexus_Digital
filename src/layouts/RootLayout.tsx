@@ -1,12 +1,14 @@
 import { motion } from 'motion/react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { Outlet, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { Outlet, useLocation, useNavigationType } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
 import Lenis from 'lenis';
 
 export default function RootLayout() {
   const { pathname, hash } = useLocation();
+  const navigationType = useNavigationType();
+  const scrollPositions = useRef<Record<string, number>>({});
 
   // Initialize Lenis Smooth Scroll
   useEffect(() => {
@@ -29,20 +31,34 @@ export default function RootLayout() {
     };
   }, []);
 
-  // Handle hashes and scroll-to-top
+  // Save scroll on leave, restore on back
   useEffect(() => {
-    if (!hash) {
+    if (navigationType === 'POP') {
+      const saved = scrollPositions.current[pathname];
+      if (saved) {
+        requestAnimationFrame(() => window.scrollTo(0, saved));
+      }
+    } else if (!hash) {
       window.scrollTo(0, 0);
-    } else {
+    }
+
+    return () => {
+      scrollPositions.current[pathname] = window.scrollY;
+    };
+  }, [pathname, hash, navigationType]);
+
+  // Handle hash scrolling
+  useEffect(() => {
+    if (hash) {
       const id = hash.replace('#', '');
       const element = document.getElementById(id);
       if (element) {
         setTimeout(() => {
           element.scrollIntoView({ behavior: 'smooth' });
-        }, 200); 
+        }, 200);
       }
     }
-  }, [pathname, hash]);
+  }, [hash]);
 
   return (
     <div className="min-h-screen bg-black selection:bg-red-600 selection:text-white relative">
@@ -50,10 +66,9 @@ export default function RootLayout() {
       <Navbar />
       
       <motion.main
-        key={pathname}
-        initial={{ opacity: 0, y: 20 }}
+        key={navigationType === 'POP' ? 'static' : pathname}
+        initial={navigationType === 'POP' ? { opacity: 1 } : { opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
       >
         <Outlet />
