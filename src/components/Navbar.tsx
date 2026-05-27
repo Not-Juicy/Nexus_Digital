@@ -85,9 +85,12 @@ export default function Navbar() {
               </AnimatePresence>
             </div>
 
-            <div ref={companyRef} className="relative">
-              <button onClick={() => setActiveDropdown(activeDropdown === 'company' ? null : 'company')} className="flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-white hover:text-red-500 transition-colors">
-                About <ChevronDown className="w-3" />
+            <div ref={companyRef} className="relative flex items-center gap-1">
+              <Link to="/about" className="text-xs font-bold uppercase tracking-widest text-white hover:text-red-500 transition-colors">
+                About
+              </Link>
+              <button onClick={() => setActiveDropdown(activeDropdown === 'company' ? null : 'company')} className="text-white hover:text-red-500 transition-colors">
+                <ChevronDown className="w-3" />
               </button>
               <AnimatePresence>
                 {activeDropdown === 'company' && (
