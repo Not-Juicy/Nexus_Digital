@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ShieldCheck, Zap, ArrowRight, Lightbulb, TrendingUp, Phone, Mail, Send } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 import { services } from '../data/services';
 import SEO from '../components/SEO';
@@ -80,7 +81,46 @@ export default function ServicesPage() {
         </div>
       </section>
 
-
+      {/* Why Choose Us */}
+      <section className="py-32 bg-[#050505] border-y border-white/5">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+            <div>
+              <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tighter mb-8 italic">
+                WHY CHOOSE <br />NEXUS DIGITAL?
+              </h2>
+              <p className="text-white/50 text-lg leading-relaxed mb-12 max-w-xl">
+                We combine strategic consulting, precision targeting, creative optimization, data-driven and automation to help ambitious brands scale smarter.
+              </p>
+              <div className="space-y-6">
+                {[
+                  'Strategic alignment with business goals',
+                  'High-performance technical execution',
+                  'Localized SEA market expertise',
+                  'Transparent reporting & constant support'
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-4 text-white">
+                    <div className="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center text-[10px] font-bold">✓</div>
+                    <span className="text-sm font-bold uppercase tracking-widest">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <Link to="/case-studies/enterprise-scale" className="relative aspect-video bg-[#111] overflow-hidden border border-white/10 group block">
+              <img 
+                src="/img/why-choose.webp"
+                alt="Digital Strategy" 
+                className="w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-[2s]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
+              <div className="absolute bottom-8 left-8">
+                <span className="text-red-500 font-mono text-xs uppercase tracking-widest underline block mb-2">Case Study</span>
+                <span className="text-2xl font-bold text-white tracking-tight">Enterprise Scale</span>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Proven Process */}
       <section className="py-32 bg-black border-b border-white/5">
