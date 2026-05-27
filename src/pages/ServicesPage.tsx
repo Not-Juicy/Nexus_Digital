@@ -1,8 +1,9 @@
-import { motion } from 'motion/react';
 import { ShieldCheck, Zap, ArrowRight, Lightbulb, TrendingUp, Phone, Mail, Send } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { motion } from 'motion/react';
 
 import { services } from '../data/services';
+import { caseStudies } from '../data/caseStudies';
 import SEO from '../components/SEO';
 
 function UsersIcon(props: any) {
@@ -82,42 +83,66 @@ export default function ServicesPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-32 bg-[#050505] border-y border-white/5">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-32 bg-[#050505] border-y border-white/5 relative overflow-hidden">
+        <div className="absolute top-0 -left-[10%] w-72 h-72 bg-red-600/5 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute bottom-0 -right-[10%] w-72 h-72 bg-indigo-600/5 blur-[120px] rounded-full pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <div>
-              <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tighter mb-8 italic">
-                WHY CHOOSE <br />NEXUS DIGITAL?
+              <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block underline">Why Us</span>
+              <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic leading-none mb-8">
+                WHY CHOOSE <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">NEXUS DIGITAL.</span>
               </h2>
               <p className="text-white/50 text-lg leading-relaxed mb-12 max-w-xl">
                 We combine strategic consulting, precision targeting, creative optimization, data-driven and automation to help ambitious brands scale smarter.
               </p>
-              <div className="space-y-6">
+              <div className="space-y-5">
                 {[
                   'Strategic alignment with business goals',
                   'High-performance technical execution',
                   'Localized SEA market expertise',
                   'Transparent reporting & constant support'
                 ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-4 text-white">
-                    <div className="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center text-[10px] font-bold">✓</div>
-                    <span className="text-sm font-bold uppercase tracking-widest">{item}</span>
-                  </div>
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                    className="flex items-center gap-4 text-white group"
+                  >
+                    <div className="w-6 h-6 bg-red-600/20 rounded-full flex items-center justify-center text-[10px] font-bold text-red-500 group-hover:bg-red-600 group-hover:text-white transition-all">✓</div>
+                    <span className="text-sm font-bold uppercase tracking-widest text-white/70 group-hover:text-white transition-colors">{item}</span>
+                  </motion.div>
                 ))}
               </div>
             </div>
-            <Link to="/case-studies/enterprise-scale" className="relative aspect-video bg-[#111] overflow-hidden border border-white/10 group block">
-              <img 
-                src="/img/why-choose.webp"
-                alt="Digital Strategy" 
-                className="w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-[2s]"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
-              <div className="absolute bottom-8 left-8">
-                <span className="text-red-500 font-mono text-xs uppercase tracking-widest underline block mb-2">Case Study</span>
-                <span className="text-2xl font-bold text-white tracking-tight">Enterprise Scale</span>
-              </div>
-            </Link>
+
+            {/* Scrollable Case Studies Stack */}
+            <div className="max-h-[500px] overflow-y-auto space-y-4 pr-2 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-red-600/50 [&::-webkit-scrollbar-thumb]:rounded-full">
+              {caseStudies.map((cs, i) => (
+                <Link key={cs.slug} to={`/case-studies/${cs.slug}`} className="group block">
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                    className="flex gap-5 bg-[#111] border border-white/5 p-5 hover:border-red-500/30 hover:bg-[#181818] transition-all rounded-xl items-center"
+                  >
+                    <div className="w-20 h-20 shrink-0 overflow-hidden rounded-lg bg-[#0a0a0a]">
+                      <img src={cs.image} alt={cs.title} className="w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-110 transition-all duration-500" referrerPolicy="no-referrer" />
+                    </div>
+                    <div className="min-w-0">
+                      <span className="text-[8px] font-black text-red-500 uppercase tracking-[0.3em] block mb-1">{cs.category}</span>
+                      <h3 className="text-base font-bold text-white group-hover:text-red-500 transition-colors leading-tight mb-1">{cs.title}</h3>
+                      <span className="text-[10px] font-bold text-white/30 uppercase tracking-widest">{cs.results}</span>
+                    </div>
+                  </motion.div>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
