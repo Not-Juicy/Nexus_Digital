@@ -1,4 +1,3 @@
-import { motion } from 'motion/react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Outlet, useLocation, useNavigationType } from 'react-router-dom';
@@ -11,7 +10,7 @@ export default function RootLayout() {
   const scrollPositions = useRef<Record<string, number>>({});
   const lenisRef = useRef<Lenis | null>(null);
 
-  // Initialize Lenis Smooth Scroll
+  // Initialize Lenis
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -25,7 +24,6 @@ export default function RootLayout() {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
-
     requestAnimationFrame(raf);
 
     return () => {
@@ -34,29 +32,36 @@ export default function RootLayout() {
     };
   }, []);
 
-  // Force scroll on every navigation
+  // Scroll to top on forward nav, restore on back
   useEffect(() => {
     const lenis = lenisRef.current;
     if (!lenis) return;
 
-    const timer = setTimeout(() => {
-      if (navigationType === 'POP') {
-        const saved = scrollPositions.current[pathname];
-        if (saved) {
-          lenis.scrollTo(saved, { immediate: true });
-        }
+    // Stop lenis, force scroll, restart after a tick
+    lenis.stop();
+
+    if (navigationType === 'POP') {
+      const saved = scrollPositions.current[pathname];
+      if (saved !== undefined) {
+        window.scrollTo(0, saved);
+        document.documentElement.scrollTop = saved;
+        setTimeout(() => lenis.scrollTo(saved, { immediate: true }), 50);
       } else {
-        if (!hash) {
-          lenis.scrollTo(0, { immediate: true });
-          window.scrollTo(0, 0);
-          document.documentElement.scrollTop = 0;
-        }
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        setTimeout(() => lenis.scrollTo(0, { immediate: true }), 50);
       }
-    }, 100);
+    } else if (!hash) {
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      setTimeout(() => lenis.scrollTo(0, { immediate: true }), 50);
+    }
+
+    // Restart lenis on next frame
+    requestAnimationFrame(() => lenis.start());
 
     return () => {
       scrollPositions.current[pathname] = lenis.scroll;
-      clearTimeout(timer);
     };
   }, [pathname, hash, navigationType]);
 
@@ -75,13 +80,10 @@ export default function RootLayout() {
 
   return (
     <div className="min-h-screen bg-black selection:bg-red-600 selection:text-white relative">
-      
       <Navbar />
-      
       <main>
         <Outlet />
       </main>
-
       <Footer />
     </div>
   );
