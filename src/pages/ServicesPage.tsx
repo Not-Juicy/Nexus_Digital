@@ -36,7 +36,8 @@ export default function ServicesPage() {
         description="Explore our high-performance digital marketing, SaaS strategy, and AI automation services designed for rapid business growth." 
       />
       {/* Hero Section */}
-      <section className="py-24 px-6 max-w-7xl mx-auto border-b border-white/10">
+      <section className="py-24 px-6 max-w-7xl mx-auto relative overflow-hidden">
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -83,7 +84,9 @@ export default function ServicesPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-32 bg-[#050505] border-y border-white/5 relative overflow-hidden">
+      <section className="py-32 bg-[#050505] relative overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
         <div className="absolute top-0 -left-[10%] w-72 h-72 bg-red-600/5 blur-[120px] rounded-full pointer-events-none" />
         <div className="absolute bottom-0 -right-[10%] w-72 h-72 bg-indigo-600/5 blur-[120px] rounded-full pointer-events-none" />
 
@@ -126,7 +129,8 @@ export default function ServicesPage() {
       </section>
 
       {/* Proven Process */}
-      <section className="py-32 bg-black border-b border-white/5">
+      <section className="py-32 bg-black relative overflow-hidden">
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-20">
             <span className="text-red-500 font-mono text-sm tracking-widest uppercase mb-4 block underline">Methodology</span>

@@ -16,7 +16,8 @@ export default function Home() {
       <Hero />
 
       {/* About NEXUS */}
-      <section className="py-24 px-6 max-w-7xl mx-auto border-b border-white/10">
+      <section className="py-24 px-6 max-w-7xl mx-auto relative overflow-hidden">
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -86,7 +87,9 @@ export default function Home() {
       </section>
 
       {/* Performance Metrics */}
-      <section className="py-32 bg-[#080808] border-y border-white/5 relative overflow-hidden">
+      <section className="py-32 bg-[#080808] relative overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-600/20 to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-600/20 to-transparent pointer-events-none" />
         <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(circle_at_70%_30%,rgba(220,38,38,0.05)_0%,transparent_70%)]" />
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
@@ -148,7 +151,9 @@ export default function Home() {
       </section>
 
       {/* High-Performance Marquee */}
-      <section className="py-16 bg-white overflow-hidden border-y border-black relative group">
+      <section className="py-16 bg-white overflow-hidden relative group">
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-black/10 to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-black/10 to-transparent pointer-events-none" />
         <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
         <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
         
@@ -177,7 +182,9 @@ export default function Home() {
       <Process />
 
       {/* Why Choose Us */}
-      <section className="py-32 bg-[#050505] border-y border-white/5 relative overflow-hidden">
+      <section className="py-32 bg-[#050505] relative overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
         <div className="absolute top-0 -left-[10%] w-72 h-72 bg-red-600/5 blur-[120px] rounded-full pointer-events-none" />
         <div className="absolute bottom-0 -right-[10%] w-72 h-72 bg-indigo-600/5 blur-[120px] rounded-full pointer-events-none" />
 
@@ -222,7 +229,9 @@ export default function Home() {
       <Testimonials />
 
       {/* Quick Contact Bar */}
-      <section className="py-20 bg-[#080808] border-y border-white/5 relative overflow-hidden">
+      <section className="py-20 bg-[#080808] relative overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-600/20 to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-600/20 to-transparent pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-12">
             <div className="text-center lg:text-left">
@@ -263,7 +272,8 @@ export default function Home() {
       </section>
 
       {/* Refined CTA Section */}
-      <section className="py-24 bg-black relative overflow-hidden border-t border-white/5">
+      <section className="py-24 bg-black relative overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
         {/* Subtle Background Elements */}
         <div className="absolute inset-0 z-0">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-red-600/10 blur-[120px] rounded-full pointer-events-none" />
