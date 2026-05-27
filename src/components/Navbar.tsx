@@ -20,6 +20,7 @@ export default function Navbar() {
       { name: 'Digital Consulting', href: '/services' },
       { name: 'SaaS Strategy', href: '/services' },
       { name: 'AI & Automation', href: '/services' },
+      { name: 'Ecommerce Solutions', href: '/ecommerce' },
     ],
     company: [
       { name: 'About Us', href: '/about' },

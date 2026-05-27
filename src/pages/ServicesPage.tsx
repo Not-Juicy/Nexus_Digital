@@ -46,7 +46,7 @@ export default function ServicesPage() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">FOR GROWTH.</span>
           </h1>
           <p className="max-w-3xl text-white/60 text-xl md:text-2xl font-medium leading-relaxed">
-            We combine strategic consulting, precision targeting, creative optimization, data-drive and automation to help ambitious brands scale smarter.
+            We combine strategic consulting, precision targeting, creative optimization, data-driven and automation to help ambitious brands scale smarter.
           </p>
         </motion.div>
       </section>
@@ -90,7 +90,7 @@ export default function ServicesPage() {
                 WHY CHOOSE <br />NEXUS DIGITAL?
               </h2>
               <p className="text-white/50 text-lg leading-relaxed mb-12 max-w-xl">
-                We combine strategic consulting, precision targeting, creative optimization, data-drive and automation to help ambitious brands scale smarter.
+                We combine strategic consulting, precision targeting, creative optimization, data-driven and automation to help ambitious brands scale smarter.
               </p>
               <div className="space-y-6">
                 {[

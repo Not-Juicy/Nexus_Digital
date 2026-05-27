@@ -3,7 +3,7 @@ import { Target, Zap, Shield, TrendingUp, ChevronRight } from 'lucide-react';
 
 import { processSteps } from '../data/process';
 
-export default function Projects() {
+export default function Process() {
   return (
     <section id="process" className="py-32 bg-[#020202] relative overflow-hidden">
       {/* Background Liquid Light */}

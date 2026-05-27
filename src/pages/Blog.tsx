@@ -100,7 +100,7 @@ export default function Blog() {
                   <span className="text-sm font-black text-black">@DanLP18</span>
                 </div>
               </a>
-              <a href="mailto:support@nexus-digital.asia" className="flex items-center gap-4 group">
+              <a href="mailto:info@nexus-digital.asia" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 bg-black flex items-center justify-center group-hover:bg-red-600 transition-colors">
                   <Mail size={20} className="text-white" />
                 </div>

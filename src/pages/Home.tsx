@@ -1,6 +1,6 @@
 import Hero from '../components/Hero';
 import Services from '../components/Services';
-import Projects from '../components/Projects';
+import Process from '../components/Projects';
 import Stats from '../components/Stats';
 import Testimonials from '../components/Testimonials';
 import SEO from '../components/SEO';
@@ -40,7 +40,7 @@ export default function Home() {
 
       <Services />
       <Stats />
-      <Projects />
+      <Process />
       <Testimonials />
 
       {/* Quick Contact Bar */}
@@ -103,7 +103,7 @@ export default function Home() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-900 pr-6 inline-block">DOMINATE?</span>
               </h2>
 <p className="text-white/40 text-xl font-medium max-w-xl leading-relaxed mb-12">
-  We combine strategic consulting, precision targeting, creative optimization, data-drive and automation to help ambitious brands scale smarter.
+  We combine strategic consulting, precision targeting, creative optimization, data-driven and automation to help ambitious brands scale smarter.
 </p>
               
               <div className="flex flex-col sm:flex-row gap-6">

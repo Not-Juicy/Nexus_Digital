@@ -34,7 +34,7 @@ export default function Services() {
             </h2>
           </div>
 <p className="max-w-sm text-white/40 text-sm leading-relaxed uppercase tracking-wide flex-shrink-0">
-  We combine strategic consulting, precision targeting, creative optimization, data-drive and automation to help ambitious brands scale smarter.
+  We combine strategic consulting, precision targeting, creative optimization, data-driven and automation to help ambitious brands scale smarter.
 </p>
         </div>
 
