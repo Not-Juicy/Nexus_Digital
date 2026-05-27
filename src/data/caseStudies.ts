@@ -11,7 +11,7 @@ export const caseStudies: CaseStudy[] = [
     slug: 'digital-consulting-lead-gen',
     title: 'Digital Consulting — Lead Generation',
     category: 'Digital Consulting',
-    image: '/img/why-choose.webp',
+    image: 'https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=1000',
     desc: 'Scaling businesses through strategic, data-driven advertising campaigns that generate qualified leads, increase conversions, and maximize ROI across Facebook, Instagram, TikTok, LinkedIn, and beyond.',
     results: '5X lead volume at 40% lower CPA'
   },
@@ -35,7 +35,7 @@ export const caseStudies: CaseStudy[] = [
     slug: 'enterprise-scale',
     title: 'Enterprise Scale',
     category: 'Digital Strategy',
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1000',
+    image: '/img/why-choose.webp',
     desc: 'Full-scale digital transformation for a multi-national enterprise, integrating performance marketing, automation, and SaaS infrastructure.',
     results: '300% revenue increase across all channels'
   }
