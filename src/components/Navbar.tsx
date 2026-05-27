@@ -23,7 +23,8 @@ export default function Navbar() {
     ],
     company: [
       { name: 'About Us', href: '/about' },
-      { name: 'Our Process', href: '/services' },
+      { name: 'Our Process', href: '/about#process' },
+      { name: 'Case Studies', href: '/about#case-studies' },
       { name: 'Clients', href: '/#testimonials' },
       { name: 'Blog', href: '/blog' },
     ]

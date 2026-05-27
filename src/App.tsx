@@ -8,6 +8,7 @@ import BlogPostPage from './pages/BlogPost';
 import ServicesPage from './pages/ServicesPage';
 import Contact from './pages/Contact';
 import Ecommerce from './pages/Ecommerce';
+import CaseStudyDetail from './pages/CaseStudyDetail';
 import NotFound from './pages/NotFound';
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="services" element={<ServicesPage />} />
           <Route path="ecommerce" element={<Ecommerce />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="case-studies/:slug" element={<CaseStudyDetail />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

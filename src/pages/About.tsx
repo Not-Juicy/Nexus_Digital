@@ -1,5 +1,8 @@
 import { motion } from 'motion/react';
-import { Target, Users, Rocket, ShieldCheck, Mail, Phone, Send } from 'lucide-react';
+import { Target, Users, Rocket, ShieldCheck, Mail, Phone, Send, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { processSteps } from '../data/process';
+import { caseStudies } from '../data/caseStudies';
 
 export default function About() {
   const values = [
@@ -127,6 +130,100 @@ export default function About() {
                 </motion.div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Process Section */}
+      <section id="process" className="py-32 px-6 max-w-7xl mx-auto border-t border-white/10">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-12">
+          <div>
+            <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block underline">Our Process</span>
+            <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic leading-none">
+              HOW WE <span className="text-red-600">DELIVER.</span>
+            </h2>
+          </div>
+          <p className="max-w-sm text-white/40 text-sm leading-relaxed uppercase tracking-wide">
+            A proven framework from discovery to scale — built for ambitious brands.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {processSteps.map((step, i) => (
+            <motion.div
+              key={step.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="group relative bg-[#0a0a0a] p-10 border border-white/5 hover:border-red-500/30 transition-all overflow-hidden"
+            >
+              <div className={`absolute inset-0 bg-gradient-to-b ${step.color} opacity-0 group-hover:opacity-100 transition-opacity`} />
+              <div className="relative z-10">
+                <span className="text-5xl font-black text-white/5 group-hover:text-red-600/20 transition-colors mb-6 block">{step.phase}</span>
+                <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-8 group-hover:bg-red-600 transition-colors">
+                  <step.icon className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-black text-white mb-2 tracking-tight group-hover:text-red-500 transition-colors">{step.title}</h3>
+                <p className="text-white/30 text-[10px] font-bold uppercase tracking-[0.3em] mb-4">{step.subtitle}</p>
+                <p className="text-white/40 text-sm leading-relaxed">{step.desc}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Case Studies Section */}
+      <section id="case-studies" className="py-32 bg-[#080808] border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-12">
+            <div>
+              <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block underline">Case Studies</span>
+              <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic leading-none">
+                PROVEN <span className="text-red-600">RESULTS.</span>
+              </h2>
+            </div>
+            <p className="max-w-sm text-white/40 text-sm leading-relaxed uppercase tracking-wide">
+              Real deployments, real outcomes — from startups to enterprises.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {caseStudies.map((cs, i) => (
+              <Link key={cs.slug} to={`/case-studies/${cs.slug}`} className="group block">
+                <motion.article
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                  className="cursor-pointer"
+                >
+                  <div className="aspect-[16/10] overflow-hidden bg-[#111] border border-white/5 relative mb-8">
+                    <img
+                      src={cs.image}
+                      alt={cs.title}
+                      className="w-full h-full object-cover opacity-50 group-hover:scale-110 group-hover:opacity-70 transition-all duration-700"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute top-6 left-6 px-4 py-2 bg-red-600 text-white text-[10px] font-black uppercase tracking-widest">
+                      {cs.category}
+                    </div>
+                  </div>
+
+                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-red-500 transition-colors leading-tight italic tracking-tight">
+                    {cs.title}
+                  </h3>
+
+                  <p className="text-white/40 text-sm leading-relaxed mb-6">
+                    {cs.desc}
+                  </p>
+
+                  <div className="inline-flex items-center gap-2 text-red-500 font-bold text-xs uppercase tracking-widest group-hover:gap-4 transition-all border-b border-red-600/30 pb-2">
+                    View Case Study <ArrowRight className="w-4 h-4" />
+                  </div>
+                </motion.article>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
