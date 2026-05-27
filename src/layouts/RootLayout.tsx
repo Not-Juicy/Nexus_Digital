@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Outlet, useLocation, useNavigationType } from 'react-router-dom';
@@ -34,22 +34,29 @@ export default function RootLayout() {
     };
   }, []);
 
-  // Scroll to top on forward navigation, restore on back
+  // Force scroll on every navigation
   useEffect(() => {
     const lenis = lenisRef.current;
     if (!lenis) return;
 
-    if (navigationType === 'POP') {
-      const saved = scrollPositions.current[pathname];
-      if (saved) {
-        requestAnimationFrame(() => { lenis.scrollTo(saved, { immediate: true }); });
+    const timer = setTimeout(() => {
+      if (navigationType === 'POP') {
+        const saved = scrollPositions.current[pathname];
+        if (saved) {
+          lenis.scrollTo(saved, { immediate: true });
+        }
+      } else {
+        if (!hash) {
+          lenis.scrollTo(0, { immediate: true });
+          window.scrollTo(0, 0);
+          document.documentElement.scrollTop = 0;
+        }
       }
-    } else if (!hash) {
-      requestAnimationFrame(() => { lenis.scrollTo(0, { immediate: true }); });
-    }
+    }, 100);
 
     return () => {
       scrollPositions.current[pathname] = lenis.scroll;
+      clearTimeout(timer);
     };
   }, [pathname, hash, navigationType]);
 
@@ -61,7 +68,7 @@ export default function RootLayout() {
       if (element && lenisRef.current) {
         setTimeout(() => {
           lenisRef.current?.scrollTo(element, { offset: -80, duration: 1.2 });
-        }, 200);
+        }, 300);
       }
     }
   }, [hash]);
@@ -71,17 +78,9 @@ export default function RootLayout() {
       
       <Navbar />
       
-      <AnimatePresence mode="wait">
-        <motion.main
-          key={pathname}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.4, ease: "easeOut" }}
-        >
-          <Outlet />
-        </motion.main>
-      </AnimatePresence>
+      <main>
+        <Outlet />
+      </main>
 
       <Footer />
     </div>
