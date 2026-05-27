@@ -32,17 +32,25 @@ export default function Home() {
       </section>
 
       {/* The NEXUS Vision */}
-      <section className="py-32 px-6 max-w-7xl mx-auto">
+      <section className="py-32 px-6 max-w-7xl mx-auto relative overflow-hidden">
+        {/* Background Glow */}
+        <div className="absolute top-1/2 -left-[10%] w-64 h-64 bg-red-600/5 blur-[100px] rounded-full pointer-events-none" />
+        <div className="absolute bottom-0 -right-[10%] w-64 h-64 bg-indigo-600/5 blur-[100px] rounded-full pointer-events-none" />
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold text-white mb-8 tracking-tight italic">The NEXUS Vision</h2>
-            <div className="space-y-6 text-white/50 text-lg leading-relaxed">
+            <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block underline">Our Philosophy</span>
+            <h2 className="text-4xl md:text-5xl font-black text-white tracking-tighter mb-8 leading-none">
+              THE NEXUS <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">VISION.</span>
+            </h2>
+            <div className="space-y-6 text-white/50 text-lg leading-relaxed border-l-2 border-red-600/20 pl-6">
               <p>
-                In today’s digital-first world, visibility, automation, and strategy are no longer optional—they’re essential. We bridge the gap between traditional business models and the future of digital commerce.
+                In today's digital-first world, visibility, automation, and strategy are no longer optional—they're essential. We bridge the gap between traditional business models and the future of digital commerce.
               </p>
               <p>
                 Based in Cambodia, we bring a global perspective to the Southeast Asian market, helping enterprises navigate the complexities of digital transformation with light-speed execution.
@@ -50,7 +58,7 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
               { icon: Target, title: 'Strategic Planning', text: 'We align your business goals with practical execution that delivers measurable results.' },
               { icon: Users, title: 'Expert Team', text: 'A collective of specialists dedicated to performance marketing and digital dominance.' },
@@ -63,12 +71,12 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="p-8 bg-[#111] border border-white/5 hover:border-red-500/30 transition-colors group"
+                className="p-8 bg-[#111] border border-white/5 hover:border-red-500/30 transition-all duration-500 group hover:-translate-y-1 hover:shadow-[0_10px_30px_-10px_rgba(220,38,38,0.15)]"
               >
                 <div className="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors">
                   <v.icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 tracking-tight">{v.title}</h3>
+                <h3 className="text-xl font-bold text-white mb-3 tracking-tight group-hover:text-red-500 transition-colors">{v.title}</h3>
                 <p className="text-white/40 text-sm leading-relaxed">{v.text}</p>
               </motion.div>
             ))}
