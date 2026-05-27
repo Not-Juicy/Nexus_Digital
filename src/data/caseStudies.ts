@@ -28,7 +28,7 @@ export const caseStudies: CaseStudy[] = [
     title: 'AI Automation — Enterprise',
     category: 'AI & Automation',
     image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1000',
-    desc: 'Designed and deployed custom AI workflows reducing manual operations by 70% for a logistics enterprise.',
+    desc: 'Integrate AI tools and workflows into your business operations. Automate repetitive tasks and unlock new capabilities with intelligent systems.',
     results: '70% operational cost reduction'
   },
   {
