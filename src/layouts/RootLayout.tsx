@@ -9,6 +9,7 @@ export default function RootLayout() {
   const { pathname, hash } = useLocation();
   const navigationType = useNavigationType();
   const scrollPositions = useRef<Record<string, number>>({});
+  const lenisRef = useRef<Lenis | null>(null);
 
   // Initialize Lenis Smooth Scroll
   useEffect(() => {
@@ -18,6 +19,7 @@ export default function RootLayout() {
       smoothWheel: true,
       touchMultiplier: 2,
     });
+    lenisRef.current = lenis;
 
     function raf(time: number) {
       lenis.raf(time);
@@ -28,18 +30,23 @@ export default function RootLayout() {
 
     return () => {
       lenis.destroy();
+      lenisRef.current = null;
     };
   }, []);
 
-  // Save scroll on leave, restore on back
+  // Save scroll on leave, restore on back, scroll top on forward
   useEffect(() => {
+    const lenis = lenisRef.current;
+
     if (navigationType === 'POP') {
       const saved = scrollPositions.current[pathname];
-      if (saved) {
-        requestAnimationFrame(() => window.scrollTo(0, saved));
+      if (saved && lenis) {
+        lenis.scrollTo(saved, { immediate: true });
       }
     } else if (!hash) {
-      window.scrollTo(0, 0);
+      if (lenis) {
+        lenis.scrollTo(0, { immediate: true });
+      }
     }
 
     return () => {
@@ -49,12 +56,12 @@ export default function RootLayout() {
 
   // Handle hash scrolling
   useEffect(() => {
-    if (hash) {
+    if (hash && lenisRef.current) {
       const id = hash.replace('#', '');
       const element = document.getElementById(id);
       if (element) {
         setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' });
+          lenisRef.current?.scrollTo(element, { offset: -80, duration: 1.2 });
         }, 200);
       }
     }
