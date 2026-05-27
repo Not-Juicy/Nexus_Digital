@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Send, ArrowUpRight, Phone, MapPin, ArrowUp } from 'lucide-react';
+import { Facebook, Linkedin, Send, ArrowUpRight, Phone, MapPin, ArrowUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -84,8 +84,7 @@ export default function Footer() {
                 {[
                   { Icon: Facebook, href: "https://www.facebook.com/Nexusdigital.asia" },
                   { Icon: Linkedin, href: "https://www.linkedin.com/company/nexus-digital-ad-solutions/?viewAsMember=true" },
-                  { Icon: Send, href: "https://t.me/DanLP18" },
-                  { Icon: Instagram, href: "#" }
+                  { Icon: Send, href: "https://t.me/DanLP18" }
                 ].map((social, i) => (
                   <a key={social.href + i} href={social.href} target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-white/30 hover:text-white hover:bg-red-600 hover:border-red-600 transition-all">
                     <social.Icon className="w-3.5 h-3.5" />

@@ -57,7 +57,7 @@ export default function Hero() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-red-800 italic pr-2 drop-shadow-[0_0_35px_rgba(239,68,68,0.15)]">WITH DIGITAL &amp; AI.</span>
           </h1>
 <p className="max-w-3xl mx-auto text-white/60 text-lg md:text-xl font-medium mb-12 leading-relaxed">
-  We combine strategic consulting, precision targeting, creative optimization, data-drive and automation to help ambitious brands scale smarter.
+  We combine strategic consulting, precision targeting, creative optimization, data-driven strategies and AI automation to help ambitious brands scale smarter.
 </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-16">

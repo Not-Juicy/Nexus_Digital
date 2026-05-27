@@ -86,7 +86,7 @@ export default function About() {
                   <v.icon className="w-5 h-5 text-white" />
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2 tracking-tight">{v.title}</h3>
-                <p className="text-white/40 text-sm leading-relaxed">{v.text}</p>
+                <p className="text-white/60 text-sm leading-relaxed">{v.text}</p>
               </motion.div>
             ))}
           </div>
@@ -104,7 +104,7 @@ export default function About() {
                 ENGINEERING <br />
                 <span className="text-red-600">DOMINANCE.</span>
               </h2>
-              <p className="text-white/40 text-lg max-w-lg mb-12 font-medium">
+              <p className="text-white/60 text-lg max-w-lg mb-12 font-medium">
                 We don't just build websites; we engineer digital high-performance environments that translate directly into business revenue and enterprise stability.
               </p>
               
@@ -116,7 +116,7 @@ export default function About() {
                   className="p-8 border border-white/5 bg-black hover:border-red-500/40 transition-all group"
                 >
                   <div className="text-4xl font-black text-red-600 mb-2 group-hover:scale-110 transition-transform origin-left">150+</div>
-                  <div className="text-[10px] font-bold text-white/30 uppercase tracking-widest">Global Deployments</div>
+                  <div className="text-[10px] font-bold text-white/50 uppercase tracking-widest">Global Deployments</div>
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -126,7 +126,7 @@ export default function About() {
                   className="p-8 border border-white/5 bg-black hover:border-red-500/40 transition-all group"
                 >
                   <div className="text-4xl font-black text-red-600 mb-2 group-hover:scale-110 transition-transform origin-left">99.9%</div>
-                  <div className="text-[10px] font-bold text-white/30 uppercase tracking-widest">System Uptime</div>
+                  <div className="text-[10px] font-bold text-white/50 uppercase tracking-widest">System Uptime</div>
                 </motion.div>
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function About() {
                   </div>
                   <h3 className="text-2xl font-black text-white mb-2 tracking-tight group-hover:text-red-500 transition-colors">{step.title}</h3>
                   <p className="text-white/30 text-[10px] font-bold uppercase tracking-[0.3em] mb-4">{step.subtitle}</p>
-                  <p className="text-white/40 text-sm leading-relaxed">{step.desc}</p>
+                  <p className="text-white/60 text-sm leading-relaxed">{step.desc}</p>
                 </div>
               </motion.div>
             ))}

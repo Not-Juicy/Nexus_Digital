@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <AnimatePresence mode="wait">
-      {/* @ts-expect-error - key is used by AnimatePresence for transitions */}
+      {/* @ts-expect-error - Routes accepts key prop at runtime for AnimatePresence exit animations */}
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Home />} />

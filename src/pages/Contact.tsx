@@ -1,7 +1,22 @@
 import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
+import { useRef, FormEvent } from 'react';
 
 export default function Contact() {
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    const data = new FormData(form);
+    const name = data.get('name') as string;
+    const email = data.get('email') as string;
+    const subject = data.get('subject') as string;
+    const message = data.get('message') as string;
+    const mailto = `mailto:info@nexus-digital.asia?subject=${encodeURIComponent(subject || 'New inquiry from ' + name)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
+    window.location.href = mailto;
+  };
+
   return (
     <div className="pt-32 bg-black">
       {/* Header */}
@@ -77,26 +92,26 @@ export default function Contact() {
           {/* Contact Form */}
           <div className="lg:col-span-7 bg-[#080808] p-12 border border-white/5 rounded-2xl">
             <h2 className="text-2xl font-bold text-white mb-12 tracking-tight italic">Write us a Message</h2>
-            <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
+            <form ref={formRef} className="space-y-8" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-3">
-                  <label className="text-[10px] font-bold uppercase tracking-widest text-white/50">Full Name</label>
-                  <input type="text" className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-red-600 focus:bg-[#111] transition-all duration-200" placeholder="John Doe" />
+                  <label htmlFor="name" className="text-[10px] font-bold uppercase tracking-widest text-white/50">Full Name</label>
+                  <input id="name" name="name" type="text" required className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-red-600/50 focus:border-red-600 focus:bg-[#111] transition-all duration-200" placeholder="John Doe" />
                 </div>
                 <div className="space-y-3">
-                  <label className="text-[10px] font-bold uppercase tracking-widest text-white/50">Email Address</label>
-                  <input type="email" className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-red-600 focus:bg-[#111] transition-all duration-200" placeholder="john@example.com" />
+                  <label htmlFor="email" className="text-[10px] font-bold uppercase tracking-widest text-white/50">Email Address</label>
+                  <input id="email" name="email" type="email" required className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-red-600/50 focus:border-red-600 focus:bg-[#111] transition-all duration-200" placeholder="john@example.com" />
                 </div>
               </div>
               <div className="space-y-3">
-                <label className="text-[10px] font-bold uppercase tracking-widest text-white/50">Subject</label>
-                <input type="text" className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-red-600 focus:bg-[#111] transition-all duration-200" placeholder="I'm interested in..." />
+                <label htmlFor="subject" className="text-[10px] font-bold uppercase tracking-widest text-white/50">Subject</label>
+                <input id="subject" name="subject" type="text" className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-red-600/50 focus:border-red-600 focus:bg-[#111] transition-all duration-200" placeholder="I'm interested in..." />
               </div>
               <div className="space-y-3">
-                <label className="text-[10px] font-bold uppercase tracking-widest text-white/50">Message</label>
-                <textarea rows={5} className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-red-600 focus:bg-[#111] transition-all duration-200 resize-none" placeholder="How can we help?"></textarea>
+                <label htmlFor="message" className="text-[10px] font-bold uppercase tracking-widest text-white/50">Message</label>
+                <textarea id="message" name="message" rows={5} required className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-red-600/50 focus:border-red-600 focus:bg-[#111] transition-all duration-200 resize-none" placeholder="How can we help?"></textarea>
               </div>
-              <button className="w-full py-6 bg-red-600 text-white font-black uppercase tracking-[0.3em] hover:bg-white hover:text-black transition-all flex items-center justify-center gap-3 rounded-lg">
+              <button type="submit" className="w-full py-6 bg-red-600 text-white font-black uppercase tracking-[0.3em] hover:bg-white hover:text-black transition-all flex items-center justify-center gap-3 rounded-lg">
                 Send Message <Send className="w-4 h-4" />
               </button>
             </form>

@@ -7,6 +7,14 @@ export default function DragRevealStack() {
   const [index, setIndex] = useState(0);
   const total = caseStudies.length;
 
+  if (total === 0) {
+    return (
+      <div className="relative w-full flex items-center justify-center bg-[#0a0a0a] border border-white/10 rounded-2xl" style={{ aspectRatio: '4/5', maxHeight: 520, minHeight: 400 }}>
+        <p className="text-white/30 text-sm">No case studies available.</p>
+      </div>
+    );
+  }
+
   const next = () => setIndex((index + 1) % total);
   const prev = () => setIndex((index - 1 + total) % total);
 
@@ -31,6 +39,7 @@ export default function DragRevealStack() {
                 className="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
                 draggable={false}
+                loading="lazy"
               />
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />

@@ -47,7 +47,7 @@ export default function ServicesPage() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">FOR GROWTH.</span>
           </h1>
           <p className="max-w-3xl text-white/60 text-xl md:text-2xl font-medium leading-relaxed">
-            We combine strategic consulting, precision targeting, creative optimization, data-driven and automation to help ambitious brands scale smarter.
+            Every service is built on strategic consulting, precision targeting, creative optimization, data-driven strategies, and AI automation — proven to scale brands across SEA and beyond.
           </p>
         </motion.div>
       </section>
@@ -71,7 +71,7 @@ export default function ServicesPage() {
                 <span className="text-white/20 font-mono text-xs uppercase tracking-widest">{service.category}</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-6 tracking-tight group-hover:text-red-500 transition-colors italic">{service.title}</h3>
-              <p className="text-white/40 text-sm leading-relaxed mb-12">
+              <p className="text-white/60 text-sm leading-relaxed mb-12">
                 {service.desc}
               </p>
               <div className="inline-flex items-center gap-2 text-white/60 text-xs font-bold uppercase tracking-widest group-hover:text-white transition-colors cursor-pointer border-b border-white/10 pb-2">
@@ -95,8 +95,8 @@ export default function ServicesPage() {
                 WHY CHOOSE <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">NEXUS DIGITAL.</span>
               </h2>
-              <p className="text-white/50 text-lg leading-relaxed mb-12 max-w-xl">
-                We combine strategic consulting, precision targeting, creative optimization, data-driven and automation to help ambitious brands scale smarter.
+              <p className="text-white/60 text-lg leading-relaxed mb-12 max-w-xl">
+                We combine strategic consulting, precision targeting, data-driven strategies, and AI automation — all tailored to turn your business goals into measurable outcomes.
               </p>
               <div className="space-y-5">
                 {[
@@ -145,7 +145,7 @@ export default function ServicesPage() {
               <div key={i} className="bg-[#111] p-12 border border-white/5 group hover:bg-[#161616] transition-colors">
                 <span className="block text-red-600 font-mono text-xl mb-8">{p.step}</span>
                 <h3 className="text-2xl font-bold text-white mb-6 uppercase tracking-tight group-hover:text-red-500 transition-colors">{p.title}</h3>
-                <p className="text-white/40 text-sm leading-relaxed">{p.desc}</p>
+                <p className="text-white/60 text-sm leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>

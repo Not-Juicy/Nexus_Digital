@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Mail, Send, Facebook, Instagram, Linkedin, PhoneCall } from 'lucide-react';
+import { Menu, X, Mail, Send, Facebook, Linkedin, PhoneCall } from 'lucide-react';
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -70,7 +70,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Toggle */}
-          <button className="lg:hidden text-white p-2" onClick={() => setIsOpen(true)}>
+          <button className="lg:hidden text-white p-2" onClick={() => setIsOpen(true)} aria-label="Open menu">
             <Menu size={32} />
           </button>
         </div>

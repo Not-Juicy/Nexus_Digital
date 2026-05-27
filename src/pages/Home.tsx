@@ -78,7 +78,7 @@ export default function Home() {
                   <v.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3 tracking-tight group-hover:text-red-500 transition-colors">{v.title}</h3>
-                <p className="text-white/40 text-sm leading-relaxed">{v.text}</p>
+                <p className="text-white/60 text-sm leading-relaxed">{v.text}</p>
               </motion.div>
             ))}
           </div>
@@ -96,18 +96,18 @@ export default function Home() {
                 ENGINEERING <br />
                 <span className="text-red-600">DOMINANCE.</span>
               </h2>
-              <p className="text-white/40 text-lg max-w-lg mb-12 font-medium">
+              <p className="text-white/60 text-lg max-w-lg mb-12 font-medium">
                 We don't just build websites; we engineer digital high-performance environments that translate directly into business revenue and enterprise stability.
               </p>
               
               <div className="grid grid-cols-2 gap-8">
                 <div className="p-8 border border-white/5 bg-black hover:border-red-500/40 transition-all group">
                   <div className="text-4xl font-black text-red-600 mb-2 group-hover:scale-110 transition-transform origin-left">150+</div>
-                  <div className="text-[10px] font-bold text-white/30 uppercase tracking-widest">Global Deployments</div>
+                  <div className="text-[10px] font-bold text-white/50 uppercase tracking-widest">Global Deployments</div>
                 </div>
                 <div className="p-8 border border-white/5 bg-black hover:border-red-500/40 transition-all group">
                   <div className="text-4xl font-black text-red-600 mb-2 group-hover:scale-110 transition-transform origin-left">99.9%</div>
-                  <div className="text-[10px] font-bold text-white/30 uppercase tracking-widest">System Uptime</div>
+                  <div className="text-[10px] font-bold text-white/50 uppercase tracking-widest">System Uptime</div>
                 </div>
               </div>
             </div>
@@ -189,8 +189,8 @@ export default function Home() {
                 WHY CHOOSE <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">NEXUS DIGITAL.</span>
               </h2>
-              <p className="text-white/50 text-lg leading-relaxed mb-12 max-w-xl">
-                We combine strategic consulting, precision targeting, creative optimization, data-driven and automation to help ambitious brands scale smarter.
+              <p className="text-white/60 text-lg leading-relaxed mb-12 max-w-xl">
+                We bring together strategic consulting, precision targeting, data-driven strategies, and AI automation — all tailored to your business growth goals.
               </p>
               <div className="space-y-5">
                 {[
@@ -280,8 +280,8 @@ export default function Home() {
                 READY TO <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-900 pr-6 inline-block">DOMINATE?</span>
               </h2>
-<p className="text-white/40 text-xl font-medium max-w-xl leading-relaxed mb-12">
-  We combine strategic consulting, precision targeting, creative optimization, data-driven and automation to help ambitious brands scale smarter.
+<p className="text-white/60 text-xl font-medium max-w-xl leading-relaxed mb-12">
+  Stop leaving growth on the table. Get the strategic edge, targeting precision, and automated infrastructure your brand needs to dominate your market.
 </p>
               
               <div className="flex flex-col sm:flex-row gap-6">
@@ -300,19 +300,19 @@ export default function Home() {
             <div className="lg:col-span-5 grid grid-cols-2 gap-4">
               <div className="p-8 bg-[#0a0a0a] border border-white/5 hover:border-red-600/30 transition-all group">
                 <span className="block text-3xl font-black text-red-600 mb-1">98%</span>
-                <span className="text-[8px] font-bold text-white/30 uppercase tracking-widest">Retention Rate</span>
+                <span className="text-[8px] font-bold text-white/50 uppercase tracking-widest">Retention Rate</span>
               </div>
               <div className="p-8 bg-[#0a0a0a] border border-white/5 hover:border-red-600/30 transition-all group">
                 <span className="block text-3xl font-black text-red-600 mb-1">7X</span>
-                <span className="text-[8px] font-bold text-white/30 uppercase tracking-widest">Average ROI</span>
+                <span className="text-[8px] font-bold text-white/50 uppercase tracking-widest">Average ROI</span>
               </div>
               <div className="p-8 bg-[#0a0a0a] border border-white/5 hover:border-red-600/30 transition-all group">
                 <span className="block text-3xl font-black text-red-600 mb-1">24/7</span>
-                <span className="text-[8px] font-bold text-white/30 uppercase tracking-widest">Technical Support</span>
+                <span className="text-[8px] font-bold text-white/50 uppercase tracking-widest">Technical Support</span>
               </div>
               <div className="p-8 bg-[#0a0a0a] border border-white/5 hover:border-red-600/30 transition-all group">
                 <span className="block text-3xl font-black text-red-600 mb-1">50K+</span>
-                <span className="text-[8px] font-bold text-white/30 uppercase tracking-widest">Campaigns Run</span>
+                <span className="text-[8px] font-bold text-white/50 uppercase tracking-widest">Campaigns Run</span>
               </div>
             </div>
           </div>
