@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import CountUp from '../components/CountUp';
 import { Target, Users, Rocket, ShieldCheck, Mail, Phone, Send, ArrowRight, BarChart3, Cog, Globe, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { processSteps } from '../data/process';
@@ -117,7 +118,7 @@ export default function About() {
                   viewport={{ once: true }}
                   className="p-8 border border-white/5 bg-black hover:border-red-500/40 transition-all group"
                 >
-                  <div className="text-4xl font-black text-red-600 mb-2 group-hover:scale-110 transition-transform origin-left">150+</div>
+                  <div className="text-4xl font-black text-red-600 mb-2 group-hover:scale-110 transition-transform origin-left"><CountUp value={150} suffix="+" /></div>
                   <div className="text-[10px] font-bold text-white/50 uppercase tracking-widest">Global Deployments</div>
                 </motion.div>
                 <motion.div
@@ -127,7 +128,7 @@ export default function About() {
                   transition={{ delay: 0.1 }}
                   className="p-8 border border-white/5 bg-black hover:border-red-500/40 transition-all group"
                 >
-                  <div className="text-4xl font-black text-red-600 mb-2 group-hover:scale-110 transition-transform origin-left">99.9%</div>
+                  <div className="text-4xl font-black text-red-600 mb-2 group-hover:scale-110 transition-transform origin-left"><CountUp value={99.9} suffix="%" decimals={1} /></div>
                   <div className="text-[10px] font-bold text-white/50 uppercase tracking-widest">System Uptime</div>
                 </motion.div>
               </div>
@@ -153,7 +154,7 @@ export default function About() {
                       <skill.icon className="w-4 h-4 text-red-600 shrink-0" />
                       <span className="text-xs font-bold text-white/70 uppercase tracking-widest">{skill.label}</span>
                     </div>
-                    <span className="text-xs font-black text-red-600">{skill.value}%</span>
+                    <span className="text-xs font-black text-red-600"><CountUp value={skill.value} suffix="%" /></span>
                   </div>
                   <div className="h-1.5 bg-white/5 w-full relative rounded-full overflow-hidden">
                     <motion.div 

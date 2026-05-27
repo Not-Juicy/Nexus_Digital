@@ -6,6 +6,7 @@ import Testimonials from '../components/Testimonials';
 import SEO from '../components/SEO';
 import DragRevealStack from '../components/DragRevealStack';
 import { motion } from 'motion/react';
+import CountUp from '../components/CountUp';
 import { Phone, Mail, Send, Facebook, Linkedin, Target, Users, Rocket, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -105,11 +106,11 @@ export default function Home() {
               
               <div className="grid grid-cols-2 gap-8">
                 <div className="p-8 border border-white/5 bg-black hover:border-red-500/40 transition-all group">
-                  <div className="text-4xl font-black text-red-600 mb-2 group-hover:scale-110 transition-transform origin-left">150+</div>
+                  <div className="text-4xl font-black text-red-600 mb-2 group-hover:scale-110 transition-transform origin-left"><CountUp value={150} suffix="+" /></div>
                   <div className="text-[10px] font-bold text-white/50 uppercase tracking-widest">Global Deployments</div>
                 </div>
                 <div className="p-8 border border-white/5 bg-black hover:border-red-500/40 transition-all group">
-                  <div className="text-4xl font-black text-red-600 mb-2 group-hover:scale-110 transition-transform origin-left">99.9%</div>
+                  <div className="text-4xl font-black text-red-600 mb-2 group-hover:scale-110 transition-transform origin-left"><CountUp value={99.9} suffix="%" decimals={1} /></div>
                   <div className="text-[10px] font-bold text-white/50 uppercase tracking-widest">System Uptime</div>
                 </div>
               </div>
@@ -132,7 +133,7 @@ export default function Home() {
                 >
                   <div className="flex justify-between items-center mb-4">
                     <span className="text-xs font-bold text-white/70 uppercase tracking-widest">{skill.label}</span>
-                    <span className="text-xs font-black text-red-600">{skill.value}%</span>
+                    <span className="text-xs font-black text-red-600"><CountUp value={skill.value} suffix="%" /></span>
                   </div>
                   <div className="h-1 bg-white/5 w-full relative">
                     <motion.div 
@@ -309,11 +310,11 @@ export default function Home() {
             {/* Metrics Bento */}
             <div className="lg:col-span-5 grid grid-cols-2 gap-4">
               <div className="p-8 bg-[#0a0a0a] border border-white/5 hover:border-red-600/30 transition-all group">
-                <span className="block text-3xl font-black text-red-600 mb-1">98%</span>
+                <span className="block text-3xl font-black text-red-600 mb-1"><CountUp value={98} suffix="%" /></span>
                 <span className="text-[8px] font-bold text-white/50 uppercase tracking-widest">Retention Rate</span>
               </div>
               <div className="p-8 bg-[#0a0a0a] border border-white/5 hover:border-red-600/30 transition-all group">
-                <span className="block text-3xl font-black text-red-600 mb-1">7X</span>
+                <span className="block text-3xl font-black text-red-600 mb-1"><CountUp value={7} suffix="X" /></span>
                 <span className="text-[8px] font-bold text-white/50 uppercase tracking-widest">Average ROI</span>
               </div>
               <div className="p-8 bg-[#0a0a0a] border border-white/5 hover:border-red-600/30 transition-all group">
@@ -321,7 +322,7 @@ export default function Home() {
                 <span className="text-[8px] font-bold text-white/50 uppercase tracking-widest">Technical Support</span>
               </div>
               <div className="p-8 bg-[#0a0a0a] border border-white/5 hover:border-red-600/30 transition-all group">
-                <span className="block text-3xl font-black text-red-600 mb-1">50K+</span>
+                <span className="block text-3xl font-black text-red-600 mb-1"><CountUp value={50} suffix="K+" /></span>
                 <span className="text-[8px] font-bold text-white/50 uppercase tracking-widest">Campaigns Run</span>
               </div>
             </div>
