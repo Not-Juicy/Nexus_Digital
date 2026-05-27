@@ -10,7 +10,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: 'ecommerce-scale-cambodia',
     title: 'E-Commerce Scale — Cambodia',
-    category: 'Performance Marketing',
+    category: 'Digital Consulting',
     image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1000',
     desc: 'Scaled a local e-commerce brand from $10K to $120K monthly revenue through omnichannel paid media and creative optimization.',
     results: '12X revenue growth in 6 months'
