@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion, AnimatePresence } from 'motion/react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Outlet, useLocation, useNavigationType } from 'react-router-dom';
@@ -34,32 +34,31 @@ export default function RootLayout() {
     };
   }, []);
 
-  // Save scroll on leave, restore on back, scroll top on forward
+  // Scroll to top on forward navigation, restore on back
   useEffect(() => {
     const lenis = lenisRef.current;
+    if (!lenis) return;
 
     if (navigationType === 'POP') {
       const saved = scrollPositions.current[pathname];
-      if (saved && lenis) {
-        lenis.scrollTo(saved, { immediate: true });
+      if (saved) {
+        requestAnimationFrame(() => { lenis.scrollTo(saved, { immediate: true }); });
       }
     } else if (!hash) {
-      if (lenis) {
-        lenis.scrollTo(0, { immediate: true });
-      }
+      requestAnimationFrame(() => { lenis.scrollTo(0, { immediate: true }); });
     }
 
     return () => {
-      scrollPositions.current[pathname] = window.scrollY;
+      scrollPositions.current[pathname] = lenis.scroll;
     };
   }, [pathname, hash, navigationType]);
 
   // Handle hash scrolling
   useEffect(() => {
-    if (hash && lenisRef.current) {
+    if (hash) {
       const id = hash.replace('#', '');
       const element = document.getElementById(id);
-      if (element) {
+      if (element && lenisRef.current) {
         setTimeout(() => {
           lenisRef.current?.scrollTo(element, { offset: -80, duration: 1.2 });
         }, 200);
@@ -72,14 +71,17 @@ export default function RootLayout() {
       
       <Navbar />
       
-      <motion.main
-        key={navigationType === 'POP' ? 'static' : pathname}
-        initial={navigationType === 'POP' ? { opacity: 1 } : { opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, ease: "easeOut" }}
-      >
-        <Outlet />
-      </motion.main>
+      <AnimatePresence mode="wait">
+        <motion.main
+          key={pathname}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+        >
+          <Outlet />
+        </motion.main>
+      </AnimatePresence>
 
       <Footer />
     </div>
