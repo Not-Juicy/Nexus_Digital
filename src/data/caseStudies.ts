@@ -30,5 +30,13 @@ export const caseStudies: CaseStudy[] = [
     image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1000',
     desc: 'Designed and deployed custom AI workflows reducing manual operations by 70% for a logistics enterprise.',
     results: '70% operational cost reduction'
+  },
+  {
+    slug: 'enterprise-scale',
+    title: 'Enterprise Scale',
+    category: 'Digital Strategy',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000',
+    desc: 'Full-scale digital transformation for a multi-national enterprise, integrating performance marketing, automation, and SaaS infrastructure.',
+    results: '300% revenue increase across all channels'
   }
 ];

@@ -21,9 +21,9 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
         >
           <span className="text-red-500 font-mono text-sm tracking-widest uppercase mb-4 block underline">About NEXUS</span>
-          <h1 className="text-5xl md:text-8xl font-bold text-white tracking-tighter mb-12">
+          <h1 className="text-5xl md:text-8xl font-bold text-white tracking-tight mb-12">
             YOUR DIGITAL <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic pr-2">PARTNER</span> FOR GROWTH.
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic pr-4">PARTNER</span> FOR GROWTH.
           </h1>
           <p className="max-w-3xl text-white/60 text-xl md:text-2xl font-medium leading-relaxed">
             We help brands grow fast and smart. We partner with ambitious leaders to build technical strategies that drive real growth — through performance marketing, SaaS product thinking, and AI-powered automation.

@@ -106,7 +106,7 @@ export default function ServicesPage() {
                 ))}
               </div>
             </div>
-            <Link to="/about#case-studies" className="relative aspect-video bg-[#111] overflow-hidden border border-white/10 group block">
+            <Link to="/case-studies/enterprise-scale" className="relative aspect-video bg-[#111] overflow-hidden border border-white/10 group block">
               <img 
                 src="/img/why-choose.webp"
                 alt="Digital Strategy" 
