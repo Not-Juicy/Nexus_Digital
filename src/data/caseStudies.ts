@@ -8,12 +8,12 @@ export interface CaseStudy extends Project {
 
 export const caseStudies: CaseStudy[] = [
   {
-    slug: 'ecommerce-scale-cambodia',
-    title: 'E-Commerce Scale — Cambodia',
+    slug: 'digital-consulting-lead-gen',
+    title: 'Digital Consulting — Lead Generation',
     category: 'Digital Consulting',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1000',
-    desc: 'Scaled a local e-commerce brand from $10K to $120K monthly revenue through omnichannel paid media and creative optimization.',
-    results: '12X revenue growth in 6 months'
+    image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=1000',
+    desc: 'Full-funnel digital consulting engagement for a B2B brand, restructuring ad strategy, creative systems, and landing page architecture to maximize lead quality.',
+    results: '5X lead volume at 40% lower CPA'
   },
   {
     slug: 'saas-launch-sea',
