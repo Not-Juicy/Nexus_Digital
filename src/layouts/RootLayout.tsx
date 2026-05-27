@@ -37,28 +37,14 @@ export default function RootLayout() {
     const lenis = lenisRef.current;
     if (!lenis) return;
 
-    // Stop lenis, force scroll, restart after a tick
-    lenis.stop();
-
     if (navigationType === 'POP') {
       const saved = scrollPositions.current[pathname];
       if (saved !== undefined) {
-        window.scrollTo(0, saved);
-        document.documentElement.scrollTop = saved;
-        setTimeout(() => lenis.scrollTo(saved, { immediate: true }), 50);
-      } else {
-        window.scrollTo(0, 0);
-        document.documentElement.scrollTop = 0;
-        setTimeout(() => lenis.scrollTo(0, { immediate: true }), 50);
+        lenis.scrollTo(saved, { duration: 0.8 });
       }
     } else if (!hash) {
-      window.scrollTo(0, 0);
-      document.documentElement.scrollTop = 0;
-      setTimeout(() => lenis.scrollTo(0, { immediate: true }), 50);
+      lenis.scrollTo(0, { duration: 0.6 });
     }
-
-    // Restart lenis on next frame
-    requestAnimationFrame(() => lenis.start());
 
     return () => {
       scrollPositions.current[pathname] = lenis.scroll;
