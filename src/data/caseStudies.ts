@@ -35,7 +35,7 @@ export const caseStudies: CaseStudy[] = [
     slug: 'enterprise-scale',
     title: 'Enterprise Scale',
     category: 'Digital Strategy',
-    image: '/img/why-choose.webp',
+    image: '/img/case-study-4.png',
     desc: 'Full-scale digital transformation for a multi-national enterprise, integrating performance marketing, automation, and SaaS infrastructure.',
     results: '300% revenue increase across all channels'
   }
