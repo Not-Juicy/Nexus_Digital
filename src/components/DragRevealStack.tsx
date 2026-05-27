@@ -13,7 +13,7 @@ export default function DragRevealStack() {
   const cs = caseStudies[index];
 
   return (
-    <div className="relative w-full" style={{ aspectRatio: '4/5', maxHeight: 520 }}>
+    <div className="relative w-full" style={{ aspectRatio: '4/5', maxHeight: 520, minHeight: 400 }}>
       <AnimatePresence mode="wait">
         <motion.div
           key={index}
@@ -24,7 +24,7 @@ export default function DragRevealStack() {
           className="absolute inset-0"
         >
           <Link to={`/case-studies/${cs.slug}`} className="group block w-full h-full">
-            <div className="relative w-full h-full overflow-hidden rounded-2xl border border-white/10">
+            <div className="relative w-full h-full overflow-hidden rounded-2xl border border-white/10 bg-[#0a0a0a]">
               <img
                 src={cs.image}
                 alt={cs.title}
@@ -32,17 +32,20 @@ export default function DragRevealStack() {
                 referrerPolicy="no-referrer"
                 draggable={false}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
-              <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                <span className="text-[8px] font-black text-red-500 uppercase tracking-[0.3em] block mb-2">{cs.category}</span>
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-1">{cs.title}</h3>
-                <p className="text-sm text-white/60 max-w-md mb-3">{cs.desc}</p>
-                <span className="inline-block text-[10px] font-bold text-white/40 uppercase tracking-widest">{cs.results}</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent pt-16 pb-6 px-6 md:px-8">
+                <div className="border-l-2 border-red-500 pl-4">
+                  <span className="text-[8px] font-black text-red-500 uppercase tracking-[0.3em] block mb-2">{cs.category}</span>
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-1 leading-tight">{cs.title}</h3>
+                  <p className="text-xs md:text-sm text-white/70 max-w-md mb-2 leading-relaxed">{cs.desc}</p>
+                  <span className="inline-block text-[9px] font-bold text-white/50 uppercase tracking-widest">{cs.results}</span>
+                </div>
               </div>
 
-              <div className="absolute top-5 right-5 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-1 group-hover:translate-y-0">
-                <span className="text-[10px] font-black text-white uppercase tracking-widest bg-red-600/90 px-4 py-2 rounded-full">View</span>
+              <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-1 group-hover:translate-y-0 z-10">
+                <span className="text-[9px] font-black text-white uppercase tracking-widest bg-red-600/90 px-4 py-2 rounded-full shadow-lg">View Case Study</span>
               </div>
             </div>
           </Link>
@@ -51,15 +54,15 @@ export default function DragRevealStack() {
 
       <button
         onClick={prev}
-        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-black/50 text-white/50 hover:text-white hover:bg-black/80 transition-all"
+        className="absolute left-1 top-1/2 -translate-y-1/2 z-10 w-9 h-9 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-black/60 text-white/60 hover:text-white hover:bg-black/90 hover:border-red-500/30 transition-all border border-white/10 text-lg backdrop-blur-sm"
       >‹</button>
       <button
         onClick={next}
-        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-black/50 text-white/50 hover:text-white hover:bg-black/80 transition-all"
+        className="absolute right-1 top-1/2 -translate-y-1/2 z-10 w-9 h-9 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-black/60 text-white/60 hover:text-white hover:bg-black/90 hover:border-red-500/30 transition-all border border-white/10 text-lg backdrop-blur-sm"
       >›</button>
 
       <div className="absolute top-4 left-4 z-10">
-        <span className="text-[10px] font-mono font-bold text-white/50 bg-black/40 px-3 py-1.5 rounded-full border border-white/10">
+        <span className="text-[9px] font-mono font-bold text-white/60 bg-black/50 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/10">
           {String(index + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
         </span>
       </div>
