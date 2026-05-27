@@ -15,6 +15,12 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = () => setActiveDropdown(null);
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, []);
+
   const menuItems = {
     services: [
       { name: 'Digital Consulting', href: '/services' },
@@ -74,8 +80,8 @@ export default function Navbar() {
               </AnimatePresence>
             </div>
 
-            <div className="relative group" onMouseEnter={() => setActiveDropdown('company')} onMouseLeave={() => setActiveDropdown(null)}>
-              <button className="flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-white hover:text-red-500 transition-colors">
+            <div className="relative">
+              <button onClick={(e) => { e.stopPropagation(); setActiveDropdown(activeDropdown === 'company' ? null : 'company'); }} className="flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-white hover:text-red-500 transition-colors">
                 About <ChevronDown className="w-3" />
               </button>
               <AnimatePresence>
