@@ -6,28 +6,43 @@
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 }
 
-html.lenis,
-html.lenis body {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   @apply font-sans antialiased;
   min-height: 100dvh;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b91c1c;
+}
+
+::selection {
+  background: #dc2626;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: pretty;
+}
+
+p {
+  text-wrap: pretty;
 }
