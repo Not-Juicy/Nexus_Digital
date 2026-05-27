@@ -4,7 +4,7 @@ import Process from '../components/Projects';
 import Stats from '../components/Stats';
 import Testimonials from '../components/Testimonials';
 import SEO from '../components/SEO';
-import { caseStudies } from '../data/caseStudies';
+import DragRevealStack from '../components/DragRevealStack';
 import { motion } from 'motion/react';
 import { Phone, Mail, Send, Facebook, Linkedin, Target, Users, Rocket, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -214,42 +214,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Sticky Card Stack */}
-            <div className="relative" style={{ height: '650px' }}>
-              {caseStudies.map((cs, i) => {
-                const isLast = i === caseStudies.length - 1;
-                return (
-                  <Link
-                    key={cs.slug}
-                    to={`/case-studies/${cs.slug}`}
-                    className="group block"
-                    style={{
-                      position: 'sticky',
-                      top: `${20 + i * 40}px`,
-                      marginBottom: isLast ? '0' : '-80px',
-                      zIndex: caseStudies.length - i,
-                    }}
-                  >
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: i * 0.15 }}
-                      className="flex gap-5 bg-[#111] border border-white/5 p-5 hover:border-red-500/30 hover:bg-[#181818] transition-all rounded-xl items-center hover:-translate-y-1 hover:shadow-[0_10px_30px_-10px_rgba(220,38,38,0.2)]"
-                    >
-                      <div className="w-20 h-20 shrink-0 overflow-hidden rounded-lg bg-[#0a0a0a]">
-                        <img src={cs.image} alt={cs.title} className="w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-110 transition-all duration-500" referrerPolicy="no-referrer" />
-                      </div>
-                      <div className="min-w-0">
-                        <span className="text-[8px] font-black text-red-500 uppercase tracking-[0.3em] block mb-1">{cs.category}</span>
-                        <h3 className="text-base font-bold text-white group-hover:text-red-500 transition-colors leading-tight mb-1">{cs.title}</h3>
-                        <span className="text-[10px] font-bold text-white/30 uppercase tracking-widest">{cs.results}</span>
-                      </div>
-                    </motion.div>
-                  </Link>
-                );
-              })}
-            </div>
+            <DragRevealStack />
           </div>
         </div>
       </section>
