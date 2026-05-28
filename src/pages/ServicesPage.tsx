@@ -94,7 +94,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <div>
               <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block underline">Why Us</span>
-              <h2 className="text-3xl md:text-5xl font-black text-white tracking-tighter uppercase italic leading-none mb-8">
+              <h2 className="text-3xl md:text-4xl font-black text-white tracking-tighter uppercase italic leading-none mb-8">
                 WHY CHOOSE <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">NEXUS DIGITAL.</span>
               </h2>
