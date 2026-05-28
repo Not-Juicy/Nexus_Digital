@@ -97,7 +97,7 @@ export default function Blog() {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-[8px] font-black text-black/30 uppercase tracking-widest">Telegram</span>
-                  <span className="text-sm font-black text-black">@DanLP18</span>
+                  <span className="text-sm font-black text-black">@NexusDigital_Support</span>
                 </div>
               </a>
               <a href="mailto:info@nexus-digital.asia" className="flex items-center gap-4 group">
