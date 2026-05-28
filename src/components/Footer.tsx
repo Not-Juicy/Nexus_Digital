@@ -63,7 +63,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-3 text-sm font-bold uppercase tracking-widest leading-none">
               <li><a href="mailto:info@nexus-digital.asia" className="text-white/50 hover:text-white transition-colors">Email Us</a></li>
               <li><a href="https://www.linkedin.com/company/nexus-digital-ad-solutions/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition-colors">LinkedIn</a></li>
-              <li><a href="https://t.me/DanLP18" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition-colors">Telegram</a></li>
+              <li><a href="https://t.me/NexusDigital_Support" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition-colors">Telegram</a></li>
               <li><a href="https://www.facebook.com/Nexusdigital.asia" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white transition-colors">Facebook</a></li>
             </ul>
           </div>
@@ -84,7 +84,7 @@ export default function Footer() {
                 {[
                   { Icon: Facebook, href: "https://www.facebook.com/Nexusdigital.asia" },
                   { Icon: Linkedin, href: "https://www.linkedin.com/company/nexus-digital-ad-solutions/?viewAsMember=true" },
-                  { Icon: Send, href: "https://t.me/DanLP18" }
+                  { Icon: Send, href: "https://t.me/NexusDigital_Support" }
                 ].map((social, i) => (
                   <a key={social.href + i} href={social.href} target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-white/30 hover:text-white hover:bg-red-600 hover:border-red-600 transition-all">
                     <social.Icon className="w-3.5 h-3.5" />

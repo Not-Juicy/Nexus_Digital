@@ -91,7 +91,7 @@ export default function Blog() {
                   <span className="text-sm font-black text-black">+855 81 968 581</span>
                 </div>
               </a>
-              <a href="https://t.me/DanLP18" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+              <a href="https://t.me/NexusDigital_Support" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 bg-black flex items-center justify-center group-hover:bg-red-600 transition-colors">
                   <Send size={20} className="text-white" />
                 </div>
