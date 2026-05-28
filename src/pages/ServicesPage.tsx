@@ -43,7 +43,7 @@ export default function ServicesPage() {
           animate={{ opacity: 1, y: 0 }}
         >
           <span className="text-red-500 font-mono text-sm tracking-widest uppercase mb-4 block underline">Our Services</span>
-          <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tighter mb-12">
+          <h1 className="text-3xl md:text-4xl font-black text-white tracking-tighter mb-12 leading-none">
             STRATEGIES BUILT <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">FOR GROWTH.</span>
           </h1>
