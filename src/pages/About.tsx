@@ -9,7 +9,7 @@ export default function About() {
   const values = [
     { icon: Target, title: 'Strategic Planning', text: 'We align your business goals with practical execution that delivers measurable results.' },
     { icon: Users, title: 'Expert Team', text: 'A collective of specialists dedicated to performance marketing and digital dominance.' },
-    { icon: Rocket, title: 'Growth Mindset', text: 'We don\'t just maintain; we scale and innovate to keep you ahead of the digital curve.' },
+    { icon: Rocket, title: 'Growth Strategy', text: 'We don\'t just maintain; we scale and innovate to keep you ahead of the digital curve.' },
     { icon: ShieldCheck, title: 'Trust & Reliability', text: 'Consistent delivery and transparent communication as your long-term digital partner.' },
   ];
 
