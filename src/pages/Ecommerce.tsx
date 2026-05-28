@@ -89,7 +89,7 @@ export default function Ecommerce() {
                   </div>
                   <div>
                     <span className="block text-[10px] font-bold opacity-60 uppercase tracking-widest">Telegram</span>
-                    <span className="text-lg font-black group-hover:underline">@DanLP18</span>
+                    <span className="text-lg font-black group-hover:underline">@NexusDigital_Support</span>
                   </div>
                 </a>
               </div>
