@@ -223,8 +223,9 @@ export default function About() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-12">
             <div>
               <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block underline">Case Studies</span>
-              <h2 className="text-3xl md:text-5xl font-black text-white tracking-tighter uppercase italic leading-none">
-                PROVEN <span className="text-red-600">RESULTS.</span>
+              <h2 className="text-3xl md:text-4xl font-black text-white tracking-tighter uppercase italic leading-none">
+                PROVEN <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">RESULTS.</span>
               </h2>
             </div>
             <p className="max-w-sm text-white/40 text-sm leading-relaxed uppercase tracking-wide">
