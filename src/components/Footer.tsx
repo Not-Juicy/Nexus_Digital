@@ -21,9 +21,9 @@ export default function Footer() {
               className="h-12 md:h-14 w-auto mb-6 mx-auto md:mx-0"
               referrerPolicy="no-referrer"
             />
-            <h3 className="text-2xl md:text-5xl lg:text-6xl font-black tracking-tighter mb-4 leading-[0.9] uppercase italic">
+            <h3 className="text-3xl md:text-4xl font-black tracking-tighter mb-4 leading-none uppercase italic">
               LET'S ARCHITECT <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-900 leading-none">THE FUTURE.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">THE FUTURE.</span>
             </h3>
             <p className="text-white/40 max-w-sm text-sm md:text-base mb-6 font-medium mx-auto md:mx-0">
               Digital consulting for brands that want to grow fast and smart. 
