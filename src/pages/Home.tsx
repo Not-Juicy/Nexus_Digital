@@ -289,7 +289,7 @@ export default function Home() {
               <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-6 block">Next Steps</span>
               <h2 className="text-3xl md:text-4xl font-black text-white tracking-tighter uppercase italic leading-none mb-8">
                 READY TO <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">DOMINATE?</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic pr-2">DOMINATE?</span>
               </h2>
 <p className="text-white/60 text-xl font-medium max-w-xl leading-relaxed mb-12">
   Stop leaving growth on the table. Get the strategic edge, targeting precision, and automated infrastructure your brand needs to dominate your market.
