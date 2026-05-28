@@ -79,7 +79,7 @@ export default function Stats() {
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ delay: i * 0.2 + 0.3 }}
-                      className="text-7xl md:text-8xl font-black text-white tracking-tighter flex items-baseline leading-none group-hover:scale-[1.02] transition-transform duration-700"
+                      className="text-5xl md:text-6xl font-black text-white tracking-tighter flex items-baseline leading-none group-hover:scale-[1.02] transition-transform duration-700"
                     >
                       {stat.value}
                       {stat.suffix && (
