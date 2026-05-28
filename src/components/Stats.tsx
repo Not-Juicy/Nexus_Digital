@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 
 const stats = [
-  { value: '3X', label: 'AVERAGE ROAS', suffix: '' },
+  { value: '6X', label: 'AVERAGE ROAS', suffix: '' },
   { value: '150', label: 'MRR GROWTH', suffix: '%' },
   { value: '60', label: 'MANUAL REDUCTION', suffix: '%' },
   { value: '99', label: 'CLIENT RETENTION', suffix: '%' },
