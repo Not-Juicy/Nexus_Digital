@@ -30,7 +30,7 @@ export default function About() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-3xl md:text-5xl font-bold text-white tracking-tight mb-12"
+            className="text-3xl md:text-5xl font-black text-white tracking-tighter mb-12 leading-none"
           >
             YOUR DIGITAL <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic pr-4">PARTNER</span> FOR GROWTH.
