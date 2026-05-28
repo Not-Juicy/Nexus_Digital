@@ -24,7 +24,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
         >
           <span className="text-red-500 font-mono text-sm tracking-widest uppercase mb-4 block underline">About NEXUS</span>
-            <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight mb-12">
+            <h1 className="text-3xl md:text-5xl font-bold text-white tracking-tight mb-12">
             YOUR DIGITAL <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic pr-4">PARTNER</span> FOR GROWTH.
           </h1>
