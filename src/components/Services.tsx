@@ -29,8 +29,9 @@ export default function Services() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-12">
           <div className="flex-1">
             <span className="text-red-500 font-mono text-sm tracking-widest uppercase mb-4 block underline">Capabilities</span>
-            <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight leading-[1.15]">
-              SERVICES BUILT <br />FOR GROWTH.
+            <h2 className="text-3xl md:text-4xl font-black text-white tracking-tighter leading-none">
+              SERVICES BUILT <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">FOR GROWTH.</span>
             </h2>
           </div>
 <p className="max-w-sm text-white/40 text-sm leading-relaxed uppercase tracking-wide flex-shrink-0">
