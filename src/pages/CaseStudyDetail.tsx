@@ -28,7 +28,7 @@ export default function CaseStudyDetail() {
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
           <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block">{study.category}</span>
-          <h1 className="text-5xl md:text-7xl font-black text-white tracking-tighter mb-8 leading-none uppercase italic">
+          <h1 className="text-4xl md:text-5xl font-black text-white tracking-tighter mb-8 leading-none uppercase italic">
             {study.title}
           </h1>
           <div className="aspect-[16/9] overflow-hidden bg-[#111] border border-white/5 mb-12">

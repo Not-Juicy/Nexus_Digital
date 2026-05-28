@@ -33,7 +33,7 @@ export default function Ecommerce() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter mb-4 uppercase italic leading-none">
+            <h1 className="text-4xl md:text-6xl font-black text-white tracking-tighter mb-4 uppercase italic leading-none">
               Ecommerce <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-900">Solutions</span>
             </h1>
@@ -103,7 +103,7 @@ export default function Ecommerce() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tighter italic uppercase">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 tracking-tighter italic uppercase">
                 Ecommerce Solutions
               </h2>
               <p className="text-white/50 text-lg leading-relaxed mb-12">

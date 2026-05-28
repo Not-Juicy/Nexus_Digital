@@ -23,7 +23,7 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-6 mb-20 relative z-10 flex flex-col md:flex-row justify-between items-end gap-8">
         <div className="max-w-2xl">
           <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.6em] mb-4 block">Global Feedback</span>
-          <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter uppercase italic leading-none">
+          <h2 className="text-4xl md:text-5xl font-black text-white tracking-tighter uppercase italic leading-none">
             CLIENT <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/20">VIEWS.</span>
           </h2>
         </div>

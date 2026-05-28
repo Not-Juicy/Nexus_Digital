@@ -24,7 +24,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
         >
           <span className="text-red-500 font-mono text-sm tracking-widest uppercase mb-4 block underline">About NEXUS</span>
-          <h1 className="text-5xl md:text-8xl font-bold text-white tracking-tight mb-12">
+            <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight mb-12">
             YOUR DIGITAL <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic pr-4">PARTNER</span> FOR GROWTH.
           </h1>
@@ -47,7 +47,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block underline">Our Philosophy</span>
-            <h2 className="text-4xl md:text-5xl font-black text-white tracking-tighter mb-8 leading-none">
+            <h2 className="text-3xl md:text-4xl font-black text-white tracking-tighter mb-8 leading-none">
               THE NEXUS <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">VISION.</span>
             </h2>
@@ -96,7 +96,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
             <div>
               <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-6 block underline">Performance Metrics</span>
-              <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic leading-none mb-8">
+              <h2 className="text-3xl md:text-5xl font-black text-white tracking-tighter uppercase italic leading-none mb-8">
                 ENGINEERING <br />
                 <span className="text-red-600">DOMINANCE.</span>
               </h2>
@@ -193,7 +193,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <div>
               <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block underline">Why Us</span>
-              <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic leading-none mb-8">
+              <h2 className="text-3xl md:text-5xl font-black text-white tracking-tighter uppercase italic leading-none mb-8">
                 WHY CHOOSE <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">NEXUS DIGITAL.</span>
               </h2>
@@ -287,7 +287,7 @@ export default function Home() {
             {/* Action Text */}
             <div className="lg:col-span-7">
               <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-6 block">Next Steps</span>
-              <h2 className="text-5xl md:text-8xl font-black text-white tracking-tighter uppercase italic leading-none mb-8">
+              <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic leading-none mb-8">
                 READY TO <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-900 pr-6 inline-block">DOMINATE?</span>
               </h2>

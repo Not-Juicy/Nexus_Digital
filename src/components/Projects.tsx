@@ -16,7 +16,7 @@ export default function Process() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-24 gap-8">
           <div className="max-w-3xl">
             <span className="text-red-500 font-mono text-[10px] font-black uppercase tracking-[0.6em] mb-4 block">Methodology</span>
-            <h2 className="text-6xl md:text-8xl font-black text-white tracking-tighter uppercase italic leading-[0.85]">
+            <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic leading-[0.85]">
               PROVEN <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/20 pr-4">PROCESS.</span>
             </h2>

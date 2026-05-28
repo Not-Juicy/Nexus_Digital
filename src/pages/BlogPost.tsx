@@ -27,7 +27,7 @@ export default function BlogPostPage() {
             Back to Insights
           </Link>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tighter mb-6 leading-[1.05] italic">
+          <h1 className="text-3xl md:text-5xl font-bold text-white tracking-tighter mb-6 leading-[1.05] italic">
             {post.title}
           </h1>
 

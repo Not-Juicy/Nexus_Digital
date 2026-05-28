@@ -30,7 +30,7 @@ export default function About() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-5xl md:text-8xl font-bold text-white tracking-tight mb-12"
+            className="text-4xl md:text-6xl font-bold text-white tracking-tight mb-12"
           >
             YOUR DIGITAL <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic pr-4">PARTNER</span> FOR GROWTH.
@@ -57,7 +57,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <span className="text-[10px] font-black text-red-500 uppercase tracking-[0.4em] mb-5 block">Our Foundation</span>
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-8 tracking-tight leading-[1.1]">
+            <h2 className="text-3xl md:text-4xl font-black text-white mb-8 tracking-tight leading-[1.1]">
               The <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700 italic pr-2">NEXUS</span> Vision
             </h2>
             <div className="border-l-2 border-red-600/30 pl-6 space-y-5 text-white/50 text-lg leading-relaxed">
@@ -103,7 +103,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
             <div>
               <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-6 block underline">Performance Metrics</span>
-              <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic leading-none mb-8">
+              <h2 className="text-3xl md:text-5xl font-black text-white tracking-tighter uppercase italic leading-none mb-8">
                 ENGINEERING <br />
                 <span className="text-red-600">DOMINANCE.</span>
               </h2>
@@ -178,7 +178,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-12">
           <div>
             <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block underline">Our Process</span>
-            <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic leading-none">
+            <h2 className="text-3xl md:text-5xl font-black text-white tracking-tighter uppercase italic leading-none">
               HOW WE <span className="text-red-600">DELIVER.</span>
             </h2>
           </div>
@@ -222,7 +222,7 @@ export default function About() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-12">
             <div>
               <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block underline">Case Studies</span>
-              <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic leading-none">
+              <h2 className="text-3xl md:text-5xl font-black text-white tracking-tighter uppercase italic leading-none">
                 PROVEN <span className="text-red-600">RESULTS.</span>
               </h2>
             </div>
@@ -281,7 +281,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             <div>
-              <h2 className="text-4xl md:text-5xl font-black text-white tracking-tighter uppercase mb-2">PARTNER WITH US.</h2>
+              <h2 className="text-3xl md:text-4xl font-black text-white tracking-tighter uppercase mb-2">PARTNER WITH US.</h2>
               <p className="text-white/80 font-bold uppercase tracking-widest text-sm">Direct support at your fingertips.</p>
             </div>
             <div className="flex flex-wrap justify-center gap-8">

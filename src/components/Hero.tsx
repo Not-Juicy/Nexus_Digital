@@ -51,7 +51,7 @@ export default function Hero() {
           <span className="inline-block px-4 py-1.5 border border-red-500/20 rounded-full text-red-500 text-xs font-bold uppercase tracking-[0.2em] mb-8 bg-red-950/10 shadow-[0_0_15px_rgba(239,68,68,0.05)]">
             Based in Cambodia • Serving Clients Globally
           </span>
-          <h1 className="text-4xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter leading-[1.05] mb-8 uppercase px-4">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-[1.05] mb-8 uppercase px-4">
             WE HELP <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-red-800 italic pr-2 drop-shadow-[0_0_35px_rgba(239,68,68,0.15)]">BUSINESSES SCALE</span><br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-red-800 italic pr-2 drop-shadow-[0_0_35px_rgba(239,68,68,0.15)]">WITH DIGITAL &amp; AI.</span>

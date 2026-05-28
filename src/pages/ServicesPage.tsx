@@ -43,7 +43,7 @@ export default function ServicesPage() {
           animate={{ opacity: 1, y: 0 }}
         >
           <span className="text-red-500 font-mono text-sm tracking-widest uppercase mb-4 block underline">Our Services</span>
-          <h1 className="text-5xl md:text-8xl font-bold text-white tracking-tighter mb-12">
+          <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tighter mb-12">
             STRATEGIES BUILT <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">FOR GROWTH.</span>
           </h1>
@@ -94,7 +94,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
             <div>
               <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-4 block underline">Why Us</span>
-              <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic leading-none mb-8">
+              <h2 className="text-3xl md:text-5xl font-black text-white tracking-tighter uppercase italic leading-none mb-8">
                 WHY CHOOSE <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">NEXUS DIGITAL.</span>
               </h2>
@@ -134,7 +134,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-20">
             <span className="text-red-500 font-mono text-sm tracking-widest uppercase mb-4 block underline">Methodology</span>
-            <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tighter italic">
+            <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tighter italic">
               A PROVEN <br />PROCESS.
             </h2>
           </div>
@@ -164,7 +164,7 @@ export default function ServicesPage() {
             <div className="absolute bottom-4 right-4 w-4 h-4 bg-red-600" />
             
             <div className="text-center lg:text-left">
-              <h2 className="text-4xl md:text-6xl font-black text-black tracking-tighter uppercase italic leading-none mb-4">
+              <h2 className="text-3xl md:text-5xl font-black text-black tracking-tighter uppercase italic leading-none mb-4">
                 READY TO <br />GROW?
               </h2>
               <p className="text-black/60 font-bold uppercase tracking-widest text-xs">Customized solutions for your business structure.</p>

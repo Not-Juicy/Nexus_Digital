@@ -29,7 +29,7 @@ export default function Services() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-12">
           <div className="flex-1">
             <span className="text-red-500 font-mono text-sm tracking-widest uppercase mb-4 block underline">Capabilities</span>
-            <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight leading-[1.15]">
+            <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight leading-[1.15]">
               SERVICES BUILT <br />FOR GROWTH.
             </h2>
           </div>
