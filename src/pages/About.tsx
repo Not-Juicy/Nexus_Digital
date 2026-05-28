@@ -103,9 +103,9 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
             <div>
               <span className="text-red-500 font-mono text-[10px] font-bold uppercase tracking-[0.4em] mb-6 block underline">Performance Metrics</span>
-              <h2 className="text-3xl md:text-5xl font-black text-white tracking-tighter uppercase italic leading-none mb-8">
+              <h2 className="text-3xl md:text-4xl font-black text-white tracking-tighter uppercase italic leading-none mb-8">
                 ENGINEERING <br />
-                <span className="text-red-600">DOMINANCE.</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">DOMINANCE.</span>
               </h2>
               <p className="text-white/60 text-lg max-w-lg mb-12 font-medium">
                 We don't just build websites; we engineer digital high-performance environments that translate directly into business revenue and enterprise stability.
