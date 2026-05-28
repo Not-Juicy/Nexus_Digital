@@ -134,8 +134,9 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-20">
             <span className="text-red-500 font-mono text-sm tracking-widest uppercase mb-4 block underline">Methodology</span>
-            <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tighter italic">
-              A PROVEN <br />PROCESS.
+            <h2 className="text-3xl md:text-4xl font-black text-white tracking-tighter leading-none">
+              A PROVEN <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 italic">PROCESS.</span>
             </h2>
           </div>
 
