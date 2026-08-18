@@ -62,7 +62,7 @@ export default function Hero() {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-16">
             <a 
-              href="https://t.me/NexusDigital_Support" 
+              href="https://t.me/ndxdigital_support" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="w-full sm:w-auto px-12 py-5 bg-gradient-to-r from-white to-neutral-200 text-black font-black uppercase tracking-widest hover:from-red-600 hover:to-red-800 hover:text-white transition-all duration-300 transform hover:scale-105 rounded-full shadow-[0_10px_35px_rgba(255,255,255,0.08)] hover:shadow-[0_10px_35px_rgba(220,38,38,0.3)] flex items-center justify-center"

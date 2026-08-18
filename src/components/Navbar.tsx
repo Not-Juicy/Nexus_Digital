@@ -54,7 +54,7 @@ export default function Navbar() {
             ))}
 
             <a 
-              href="https://t.me/NexusDigital_Support" 
+              href="https://t.me/ndxdigital_support" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="flex items-center gap-4 bg-red-600 py-4 px-6 hover:bg-white hover:text-black group transition-all cursor-pointer rounded-full"
@@ -117,7 +117,7 @@ export default function Navbar() {
                     <Facebook className="text-white/50 hover:text-red-500 transition-colors cursor-pointer" />
                     <span className="text-white/30 text-[10px] font-bold uppercase tracking-widest">Facebook</span>
                   </a>
-                  <a href="https://t.me/NexusDigital_Support" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
+                  <a href="https://t.me/ndxdigital_support" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
                     <Send className="text-white/50 hover:text-red-500 transition-colors cursor-pointer" />
                     <span className="text-white/30 text-[10px] font-bold uppercase tracking-widest">Telegram</span>
                   </a>

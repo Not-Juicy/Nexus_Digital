@@ -83,13 +83,13 @@ export default function Ecommerce() {
                     <span className="text-lg font-black">+855 81 968 581</span>
                   </div>
                 </div>
-                <a href="https://t.me/NexusDigital_Support" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 border-t border-white/20 pt-8 group">
+                <a href="https://t.me/ndxdigital_support" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 border-t border-white/20 pt-8 group">
                   <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center group-hover:bg-white transition-colors">
                     <Send className="w-5 h-5 text-red-500" />
                   </div>
                   <div>
                     <span className="block text-[10px] font-bold opacity-60 uppercase tracking-widest">Telegram</span>
-                    <span className="text-lg font-black group-hover:underline">@NexusDigital_Support</span>
+                    <span className="text-lg font-black group-hover:underline">@ndxdigital_support</span>
                   </div>
                 </a>
               </div>

@@ -80,7 +80,7 @@ export default function Contact() {
             <div>
               <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-white/40 mb-8 underline underline-offset-8">Social Connect</h2>
               <div className="flex gap-6">
-                <a href="https://t.me/NexusDigital_Support" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/60 hover:text-red-500 transition-colors uppercase text-xs font-bold tracking-widest">
+                <a href="https://t.me/ndxdigital_support" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/60 hover:text-red-500 transition-colors uppercase text-xs font-bold tracking-widest">
                   <MessageCircle className="w-4 h-4" /> Telegram
                 </a>
                 <a href="https://www.facebook.com/Nexusdigital.asia" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-red-500 transition-colors uppercase text-xs font-bold tracking-widest">Facebook</a>

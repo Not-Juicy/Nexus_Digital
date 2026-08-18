@@ -290,7 +290,7 @@ export default function About() {
               <a href="tel:+85581968581" className="flex items-center gap-3 text-white font-black hover:scale-110 transition-transform">
                 <Phone size={24} /> <span>+855 81 968 581</span>
               </a>
-              <a href="https://t.me/NexusDigital_Support" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white font-black hover:scale-110 transition-transform">
+              <a href="https://t.me/ndxdigital_support" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-white font-black hover:scale-110 transition-transform">
                 <Send size={24} /> <span>Telegram</span>
               </a>
               <a href="mailto:info@nexus-digital.asia" className="flex items-center gap-3 text-white font-black hover:scale-110 transition-transform">
