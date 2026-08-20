@@ -121,7 +121,8 @@ export default function Home() {
                 { label: 'E-Commerce Infrastructure', value: 94 },
                 { label: 'Cloud Automation Systems', value: 88 },
                 { label: 'Performance Marketing Data', value: 97 },
-                { label: 'Enterprise Security Protocols', value: 100 }
+                { label: 'Enterprise Security Protocols', value: 100 },
+                { label: 'Scalable Web/App System', value: 95 }
               ].map((skill, i) => (
                 <motion.div 
                   key={i}

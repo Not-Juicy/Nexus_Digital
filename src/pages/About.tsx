@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import CountUp from '../components/CountUp';
-import { Target, Users, Rocket, ShieldCheck, Mail, Phone, Send, ArrowRight, BarChart3, Cog, Globe, Zap } from 'lucide-react';
+import { Target, Users, Rocket, ShieldCheck, Mail, Phone, Send, ArrowRight, BarChart3, Cog, Globe, Zap, Code } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { processSteps } from '../data/process';
 import { caseStudies } from '../data/caseStudies';
@@ -139,7 +139,8 @@ export default function About() {
                 { icon: BarChart3, label: 'E-Commerce Infrastructure', value: 94 },
                 { icon: Cog, label: 'Cloud Automation Systems', value: 88 },
                 { icon: Globe, label: 'Performance Marketing Data', value: 97 },
-                { icon: Zap, label: 'Enterprise Security Protocols', value: 100 }
+                { icon: Zap, label: 'Enterprise Security Protocols', value: 100 },
+                { icon: Code, label: 'Scalable Web/App System', value: 95 }
               ].map((skill, i) => (
                 <motion.div 
                   key={i}
