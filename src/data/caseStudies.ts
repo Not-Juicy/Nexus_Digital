@@ -20,7 +20,7 @@ export const caseStudies: CaseStudy[] = [
     title: 'SaaS Product Launch — SEA',
     category: 'SaaS Strategy',
     image: '/img/case-study-2.png',
-    desc: 'Product strategy, roadmap planning, and go-to-market execution for SaaS businesses. From PRDs to launch and beyond.',
+    desc: 'Product strategy, roadmap planning, and go-to-market execution for SaaS businesses. From PRDs to launching SaaS product beyond and building modern web applications for your online business.',
     results: '5,000+ signups in first quarter'
   },
   {
