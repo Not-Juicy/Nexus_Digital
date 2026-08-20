@@ -7,10 +7,10 @@ export interface BlogPostDetail extends BlogPost {
 
 export const blogPosts: BlogPostDetail[] = [
   {
-    slug: 'hello-world',
-    title: 'Hello world!',
+    slug: 'unlocking-digital-growth-sea',
+    title: 'Unlocking Digital Growth in Southeast Asia',
     excerpt:
-      'Welcome to NEXUS Digital. This is our first post. Stay tuned for more insights into the digital SEA market...',
+      'Welcome to NEXUS Digital. Learn how we help ambitious brands scale through performance marketing, modern engineering, and AI automation.',
     date: 'May 16, 2025',
     author: 'Admin',
     readTime: '2 min read',
