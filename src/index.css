@@ -7,7 +7,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* Prevent scrollbar dragging lag in Chromium-based browsers */
+  scroll-behavior: auto;
 }
 
 body {
