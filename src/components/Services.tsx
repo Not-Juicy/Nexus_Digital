@@ -16,7 +16,7 @@ const services = [
   },
   {
     icon: Cpu,
-    title: 'AI & Automation',
+    title: 'AI Agentic',
     desc: 'Integrate AI tools and workflows into your business operations. Automate repetitive tasks and unlock new capabilities with intelligent systems.',
     color: 'from-purple-500 to-pink-500'
   }

@@ -15,9 +15,9 @@ export const services: Service[] = [
     category: 'SaaS'
   },
   {
-    title: 'AI & Automation',
+    title: 'AI Agentic',
     desc: 'Integrate AI tools and workflows into your business operations. Automate repetitive tasks and unlock new capabilities with intelligent systems.',
     icon: Zap,
-    category: 'Automation'
+    category: 'AI'
   }
 ];

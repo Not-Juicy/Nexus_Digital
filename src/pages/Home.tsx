@@ -170,7 +170,7 @@ export default function Home() {
               <span className="w-4 h-4 bg-red-600 rotate-45" />
               <span className="text-transparent font-black uppercase tracking-tighter text-6xl [-webkit-text-stroke:1px_black]">SaaS Strategy</span>
               <span className="w-4 h-4 bg-black rounded-full" />
-              <span className="text-black text-6xl font-black uppercase tracking-tighter">AI Automation</span>
+              <span className="text-black text-6xl font-black uppercase tracking-tighter">AI Agentic</span>
               <span className="w-4 h-4 bg-red-600 rotate-45" />
               <span className="text-transparent font-black uppercase tracking-tighter text-6xl [-webkit-text-stroke:1px_black]">Digital Growth</span>
               <span className="w-4 h-4 bg-black rounded-full" />

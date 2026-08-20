@@ -41,7 +41,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-3 text-sm font-bold uppercase tracking-widest leading-none">
               <li><Link to="/services" className="text-white/50 hover:text-white transition-colors">Digital Consulting</Link></li>
               <li><Link to="/services" className="text-white/50 hover:text-white transition-colors">SaaS Strategy</Link></li>
-              <li><Link to="/services" className="text-white/50 hover:text-white transition-colors">AI & Automation</Link></li>
+              <li><Link to="/services" className="text-white/50 hover:text-white transition-colors">AI Agentic</Link></li>
               <li><Link to="/ecommerce" className="text-white/50 hover:text-white transition-colors">Ecommerce Solutions</Link></li>
             </ul>
           </div>

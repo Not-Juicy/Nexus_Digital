@@ -25,8 +25,8 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: 'ai-automation-enterprise',
-    title: 'AI Automation — Enterprise',
-    category: 'AI & Automation',
+    title: 'AI Agentic — Enterprise',
+    category: 'AI Agentic',
     image: '/img/case-study-3.png',
     desc: 'Integrate AI tools and workflows into your business operations. Automate repetitive tasks and unlock new capabilities with intelligent systems.',
     results: '70% operational cost reduction'
